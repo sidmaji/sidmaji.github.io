@@ -1,0 +1,46 @@
+---
+import type { CollectionEntry } from "astro:content";
+interface Props {
+  project: CollectionEntry<"projects">;
+}
+
+const { project } = Astro.props;
+import { Picture } from "astro:assets";
+---
+
+<a
+  id={project.slug}
+  href={project.data.url}
+  class:list={[
+    `block relative @container overflow-hidden outline-offset-4`,
+    project.data.feat
+      ? "bg-white/65 hover:bg-white/80 shadow-card hover:shadow-elevated"
+      : "bg-white/20 hover:bg-white/40 border-dashed border-b-1 md:border-1 border-(--active-muted)",
+    `transition-all hover:-translate-y-1 rounded-edges md:visible-masonry`,
+  ]}
+  style={`view-transition-name: ${project.slug}; ${project.data.color ? `outline-color: ${project.data.color};` : ""}`}
+  data-featured={project.data.feat}
+  hidden={!project.data.feat}
+>
+  <Picture
+    src={project.data.cover}
+    alt={project.data.coverAlt}
+    densities={[1, 2]}
+    quality="max"
+    width="416"
+    height="208"
+    class="w-full"
+    loading={[2025, 2024].includes(project.data.year) ? "eager" : "lazy"}
+  />
+  <div class="p-4 @sm:p-6 @xs:-mt-1">
+    <span class="text-sm float-right mt-1 text-(--active-muted)">
+      {project.data.year}
+    </span>
+    <h2 class={`text-xl inline text-(--active-hue) font-triple`}>
+      {project.data.name}
+    </h2>
+    <p class={`text-sm text-(--active-muted) weight-book mt-1`}>
+      {project.data.desc}
+    </p>
+  </div>
+</a>
