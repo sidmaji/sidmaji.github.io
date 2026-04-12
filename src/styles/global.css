@@ -16,15 +16,6 @@
   --font-triple: "Manrope", sans-serif;
   --font-sans: "Manrope", sans-serif;
 
-  --color-flame: oklch(0.7 0.24 32.74);
-  --color-brat: oklch(0.67 0.18 117.23);
-  --color-acid: oklch(0.81 0.15 115.61);
-  --color-spill: oklch(0.2 0.04 247.15);
-  --color-light: #f4e1f9;
-  --color-muted: #6870b0;
-  --color-lavender: #a4aeff;
-  --color-dark: #1527c6;
-
   --shadow-border: 0 0 0 1px rgba(0, 0, 0, 0.08);
   --shadow-inset:
     inset 0 0 0 1px rgba(0, 0, 0, 0.08), 0 2px 2px rgba(0, 0, 0, 0.04);
@@ -40,9 +31,9 @@
 }
 
 @property --active-hue {
-  syntax: "<string>";
+  syntax: "<color>";
   inherits: false;
-  initial-value: var(--color-rose);
+  initial-value: #526FFF;
 }
 @property --active-comp {
   syntax: "<number>";
@@ -56,18 +47,8 @@
 }
 
 :root {
-  --color-nimbus: oklch(0.52 0 0);
-  --color-rose: oklch(0.54 0.25 2.14);
-  --color-acid: oklch(0.81 0.15 115.61);
-  --color-spill: oklch(0.2 0.04 247.15);
-  --color-flame: oklch(0.7 0.24 32.74);
-  --color-element: oklch(0.62 0.12 173.48);
-  --color-brat: oklch(0.67 0.18 117.23);
-  --color-indigo: oklch(0.4 0.25 265.2);
-  --color-eggplant: oklch(0.27 0.09 311.48);
-
-  --active-hue: var(--color-nimbus);
-  --active-saturation: 0;
+  --active-hue: #526FFF;
+  --active-saturation: 0.1;
   --active-comp: 0.75;
   --active-bg: oklch(
     from var(--active-hue) calc(l + 0.4) calc(var(--active-saturation) / 8) h
@@ -76,11 +57,7 @@
     from var(--active-hue) calc(l / 1.25) calc(var(--active-comp) / 6) h
   );
   --active-muted: color-mix(in oklab, var(--active-text), lch(0 0 0 / 0.5) 50%);
-  --active-accent: var(--color-spill);
-}
-
-:root {
-  color-scheme: light;
+  --active-accent: var(--active-hue);
 }
 
 @view-transition {
@@ -121,6 +98,8 @@ p,
 }
 
 .prose {
+  font-size: 1.05rem;
+  line-height: 1.8;
   --tw-prose-headings: var(--active-text);
   --tw-prose-body: var(--active-text);
   --tw-prose-links: var(--active-hue);
@@ -141,6 +120,12 @@ p,
 }
 .prose a {
   font-weight: inherit;
+}
+
+.prose p,
+.prose li {
+  font-size: 1.05rem;
+  line-height: 1.8;
 }
 
 .rounded-edges {

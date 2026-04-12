@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from "astro:content"
+
+interface Props {
+  course: CollectionEntry<"coursework">
+}
+
+const { course } = Astro.props
+
+const emoji = course.data.recommended ? "👍" : "👎"
+---
+
+<a
+  href={`/coursework/${course.id}`}
+  data-filter-item="true"
+  data-recommended={String(course.data.recommended)}
+  class="group flex items-start gap-3 rounded-2xl px-2 py-2 transition-colors hover:bg-white/35"
+>
+  <span class="mt-0.5 text-lg leading-none" aria-hidden="true">
+    {emoji}
+  </span>
+  <span class="min-w-0">
+    <span class="block text-lg font-medium leading-snug text-(--active-hue)">
+      {course.data.name}
+    </span>
+  </span>
+</a>

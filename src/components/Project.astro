@@ -6,36 +6,56 @@ interface Props {
 }
 
 const { project } = Astro.props;
+
+const formattedDate = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(project.data.date)
+
+const cover = project.data.cover
 ---
 
 <a
   id={project.id}
   href={`/projects/${project.id}`}
+  data-filter-item="true"
+  data-tags={project.data.tags?.join(",") ?? ""}
   class:list={[
     `block relative @container overflow-hidden outline-offset-4`,
     "bg-white/65 hover:bg-white/80 shadow-card hover:shadow-elevated",
     `transition-all hover:-translate-y-1 rounded-edges md:visible-masonry`,
   ]}
-  style={`view-transition-name: ${project.id}; ${project.data.color ? `outline-color: ${project.data.color};` : ""}`}
+  style={`view-transition-name: ${project.id}; ${project.data.color ? `--project-accent: ${project.data.color}; outline-color: ${project.data.color};` : ""}`}
 >
-  <Picture
-    src={project.data.cover}
-    alt={project.data.coverAlt}
-    densities={[1, 2]}
-    quality="max"
-    width="416"
-    height="208"
-    class="w-full"
-    loading={[2025, 2024].includes(project.data.year) ? "eager" : "lazy"}
-  />
+  {project.data.color ? (
+    <div class="h-1 w-full" style={`background-color: ${project.data.color};`} />
+  ) : null}
+  {cover ? (
+    <Picture
+      src={cover as NonNullable<typeof cover>}
+      alt={project.data.coverAlt}
+      densities={[1, 2]}
+      quality="max"
+      width="416"
+      height="208"
+      class="w-full"
+      loading={[2025, 2024].includes(project.data.date.getFullYear()) ? "eager" : "lazy"}
+    />
+  ) : (
+    <div class="flex aspect-video w-full items-center justify-center bg-white/70 px-4 text-center text-sm text-(--active-muted)">
+      {project.data.coverAlt}
+    </div>
+  )}
   <div class="p-4 @sm:p-6 @xs:-mt-1">
-    <span class="text-sm float-right mt-1 text-(--active-muted)">
-      {project.data.year}
+    <span class="float-right mt-1 text-[0.95rem] text-(--active-muted) weight-normal">
+      {formattedDate}
     </span>
-    <h2 class={`text-xl inline text-(--active-hue) font-triple`}>
+    <h2 class={`text-xl inline text-(--active-hue) font-triple weight-medium`}>
       {project.data.name}
     </h2>
-    <p class={`text-sm text-(--active-muted) weight-book mt-1`}>
+    <p class={`mt-1 text-[0.98rem] leading-6 text-(--active-muted) weight-normal`}>
       {project.data.desc}
     </p>
   </div>

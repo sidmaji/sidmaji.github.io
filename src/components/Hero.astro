@@ -1,16 +1,47 @@
 ---
 import Socials from "./Socials.astro"
 import Project from "./Project.astro"
+import BlogCard from "./BlogCard.astro"
+import CourseworkListItem from "./CourseworkListItem.astro"
 import { getCollection } from "astro:content"
 
 let allProjects = await getCollection("projects")
 allProjects = allProjects.sort((a, b) => {
-  if (a.data.year > b.data.year) return -1
-  if (a.data.year < b.data.year) return 1
+  if (a.data.date > b.data.date) return -1
+  if (a.data.date < b.data.date) return 1
   if (a.data.name < b.data.name) return -1
   if (a.data.name > b.data.name) return 1
   return 0
 })
+
+let allBlogPosts = await getCollection("blog")
+allBlogPosts = allBlogPosts.sort((a, b) => {
+  if (a.data.date > b.data.date) return -1
+  if (a.data.date < b.data.date) return 1
+  return a.data.title.localeCompare(b.data.title)
+})
+
+let allCourses = await getCollection("coursework")
+allCourses = allCourses.sort((a, b) => {
+  if (a.data.date > b.data.date) return -1
+  if (a.data.date < b.data.date) return 1
+  return a.data.name.localeCompare(b.data.name)
+})
+
+const courseworkGroups = new Map<string, typeof allCourses>()
+for (const course of allCourses) {
+  const groupedCourses = courseworkGroups.get(course.data.quarter) ?? []
+  groupedCourses.push(course)
+  courseworkGroups.set(course.data.quarter, groupedCourses)
+}
+
+const projectTags = Array.from(
+  new Set(allProjects.flatMap((entry) => entry.data.tags ?? [])),
+).sort((a, b) => a.localeCompare(b))
+
+const blogTags = Array.from(
+  new Set(allBlogPosts.flatMap((entry) => entry.data.tags ?? [])),
+).sort((a, b) => a.localeCompare(b))
 
 const tabs = [
   { id: "projects", label: "Projects" },
@@ -25,12 +56,12 @@ const emptyStateClasses =
 <header class="px-4 md:px-0 font-triple">
   <Socials />
   <h1
-    class="text-7xl lg:text-[6.7rem] weight-book text-(--active-hue) indent-[-.25ch] my-2"
+    class="text-7xl lg:text-[6.7rem] weight-normal text-(--active-hue) mt-4"
   >
     Siddhant Maji
   </h1>
   {<!-- prettier-ignore -->}
-  <p class="my-6 weight-book text-lg/7 md:text-xl/9 text-pretty">
+  <p class="my-6 weight-medium text-xl/8 md:text-[1.45rem] md:leading-9 text-pretty max-w">
     Senior at Independence High School, Frisco, Texas.<br />
   </p>
   <details
@@ -58,29 +89,88 @@ const emptyStateClasses =
         >
         </path>
       </svg>
-      Full bio
+      Full Bio
     </summary>
-    <!-- <div class="p-2 md:pr-0">
-      <p class="text-pretty font-mono-slabs weight-book max-w-3xl">
-        I’m Lachlan Campbell (they/them, b. 2001), a design engineer & artist.
-        As&nbsp;a middle schooler in central PA, I began working on open source
-        projects, later attending & organizing hackathons in high school. From
-        2017–20, I led storytelling at the nonprofit <a
-          href="https://hackclub.com"
-          class="font-sans"
-        >Hack&nbsp;Club</a>, building programs for 30K+ teenagers to start coding.
-        In&nbsp;2021, I&nbsp;joined
-        <a href="https://watershed.com" class="font-sans">Watershed</a> to
-        help companies decarbonize, launching our website, designing our branding,
-        and developing our design system. I graduated from the NYU Tisch Interactive
-        Media Arts program in spring 2025, where I made environmental
-        storytelling with code, hardware, & physical fabrication in New York & Berlin.
-        This summer, I returned to San Francisco to lead design engineering
-        at Watershed, managing &gt;2 gigatons of carbon emissions.
+    <div class="p-2 md:pr-0">
+      <p class="text-pretty font-mono-slabs weight-normal text-lg/8 md:text-xl/9 max-w-3xl">
+        I’m Siddhant Maji (you can call me Sid!), an incoming freshman at UCSD/Purdue studying Computer Science.
       </p>
-    </div> -->
+    </div>
   </details>
 </header>
+
+<section class="mx-4 md:mx-0 mt-12 mb-6">
+  <details data-filter-panel="projects" class="group rounded-3xl border border-black/10 bg-white/45 p-3 shadow-border">
+    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-[18px] px-3 py-2 font-sans font-medium text-(--active-text)">
+      <span>Filter projects tags</span>
+      <span class="text-sm text-(--active-muted)">Choose one or more</span>
+    </summary>
+    <div class="mt-3 space-y-3 px-1 pb-1">
+      <input
+        type="search"
+        placeholder="Search project tags"
+        data-tag-search="projects"
+        class="w-full rounded-full border border-black/10 bg-white/80 px-4 py-2 text-base text-(--active-text) outline-none placeholder:text-(--active-muted)"
+      />
+      <div class="flex flex-wrap gap-2" data-tag-options="projects">
+        {projectTags.length ? projectTags.map((tag) => (
+          <label data-tag-option data-tag-name={tag} class="inline-flex cursor-pointer items-center">
+            <input type="checkbox" value={tag} class="peer sr-only" data-tag-checkbox="projects" />
+            <span class="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-sm font-medium text-(--active-muted) shadow-sm transition peer-checked:bg-(--active-hue) peer-checked:text-white">
+              {tag}
+            </span>
+          </label>
+        )) : <p class="text-sm text-(--active-muted)">No project tags yet.</p>}
+      </div>
+    </div>
+  </details>
+
+  <details data-filter-panel="blog" hidden class="group mt-4 rounded-3xl border border-black/10 bg-white/45 p-3 shadow-border">
+    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-[18px] px-3 py-2 font-sans font-medium text-(--active-text)">
+      <span>Filter blog tags</span>
+      <span class="text-sm text-(--active-muted)">Choose one or more</span>
+    </summary>
+    <div class="mt-3 space-y-3 px-1 pb-1">
+      <input
+        type="search"
+        placeholder="Search blog tags"
+        data-tag-search="blog"
+        class="w-full rounded-full border border-black/10 bg-white/80 px-4 py-2 text-base text-(--active-text) outline-none placeholder:text-(--active-muted)"
+      />
+      <div class="flex flex-wrap gap-2" data-tag-options="blog">
+        {blogTags.length ? blogTags.map((tag) => (
+          <label data-tag-option data-tag-name={tag} class="inline-flex cursor-pointer items-center">
+            <input type="checkbox" value={tag} class="peer sr-only" data-tag-checkbox="blog" />
+            <span class="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-sm font-medium text-(--active-muted) shadow-sm transition peer-checked:bg-(--active-hue) peer-checked:text-white">
+              {tag}
+            </span>
+          </label>
+        )) : <p class="text-sm text-(--active-muted)">No blog tags yet.</p>}
+      </div>
+    </div>
+  </details>
+
+  <details data-filter-panel="coursework" hidden class="group mt-4 rounded-3xl border border-black/10 bg-white/45 p-3 shadow-border">
+    <summary class="flex cursor-pointer list-none items-center justify-between gap-4 rounded-[18px] px-3 py-2 font-sans font-medium text-(--active-text)">
+      <span>Filter coursework</span>
+      <span class="text-sm text-(--active-muted)">Recommended or not</span>
+    </summary>
+    <div class="mt-3 flex flex-wrap gap-2 px-1 pb-1">
+      <label class="inline-flex cursor-pointer items-center">
+        <input type="checkbox" value="recommended" class="peer sr-only" data-course-filter-checkbox="coursework" />
+        <span class="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-sm font-medium text-(--active-muted) shadow-sm transition peer-checked:bg-(--active-hue) peer-checked:text-white">
+          👍 Recommended
+        </span>
+      </label>
+      <label class="inline-flex cursor-pointer items-center">
+        <input type="checkbox" value="not-recommended" class="peer sr-only" data-course-filter-checkbox="coursework" />
+        <span class="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-sm font-medium text-(--active-muted) shadow-sm transition peer-checked:bg-(--active-hue) peer-checked:text-white">
+          👎 Not recommended
+        </span>
+      </label>
+    </div>
+  </details>
+</section>
 
 <section
   class="mx-4 md:mx-0 mt-12 mb-8 flex flex-wrap items-center gap-x-8 gap-y-4"
@@ -94,7 +184,7 @@ const emptyStateClasses =
         <button
           type="button"
           class:list={[
-            "px-4 py-2 rounded-full inline-flex items-center gap-2 transition-colors weight-book",
+            "px-4 py-2 rounded-full inline-flex items-center gap-2 transition-colors weight-medium",
             index === 0
               ? "bg-white/65 shadow-card"
               : "hover:bg-white/50 text-(--active-muted)",
@@ -118,22 +208,47 @@ const emptyStateClasses =
   </div>
 
   <div id="blog-panel" data-tab-panel="blog" hidden>
-    <div class={emptyStateClasses}>
-      Blog content will live here next.
-    </div>
+    {allBlogPosts.length ? (
+      <section aria-label="Blog posts" class="space-y-4">
+        {allBlogPosts.map((post) => <BlogCard post={post} />)}
+      </section>
+    ) : (
+      <div class={emptyStateClasses}>
+        Blog content will live here next.
+      </div>
+    )}
   </div>
 
   <div id="coursework-panel" data-tab-panel="coursework" hidden>
-    <div class={emptyStateClasses}>
-      Coursework content will live here next.
-    </div>
+    {courseworkGroups.size ? (
+      <section aria-label="Coursework" class="space-y-10">
+        {Array.from(courseworkGroups.entries()).map(([quarter, courses]) => (
+          <section data-course-group class="space-y-4">
+            <h2 class="text-2xl font-triple weight-medium text-(--active-muted)">
+              {quarter}
+            </h2>
+            <div class="space-y-1">
+              {courses.map((course) => (
+                <CourseworkListItem course={course} />
+              ))}
+            </div>
+          </section>
+        ))}
+      </section>
+    ) : (
+      <div class={emptyStateClasses}>
+        Coursework content will live here next.
+      </div>
+    )}
   </div>
 </section>
 
 <script is:inline>
   const tabButtons = Array.from(document.querySelectorAll("[data-tab-button]"))
   const tabPanels = Array.from(document.querySelectorAll("[data-tab-panel]"))
+  const filterPanels = Array.from(document.querySelectorAll("[data-filter-panel]"))
   const activeTabStorageKey = "home-tab"
+  const activeFilterStorageKey = "home-filters"
 
   function setActiveTab(tabId, persist = true) {
     tabButtons.forEach((button) => {
@@ -152,11 +267,143 @@ const emptyStateClasses =
     if (persist) {
       sessionStorage.setItem(activeTabStorageKey, tabId)
     }
+
+    filterPanels.forEach((panel) => {
+      panel.hidden = panel.dataset.filterPanel !== tabId
+    })
+
+    applyFilters(tabId, false)
   }
+
+  function getCurrentFilters(tabId) {
+    const savedFilters = sessionStorage.getItem(activeFilterStorageKey)
+    const parsedFilters = savedFilters ? JSON.parse(savedFilters) : {}
+    return parsedFilters[tabId] ?? {}
+  }
+
+  function saveCurrentFilters(tabId, state) {
+    const savedFilters = sessionStorage.getItem(activeFilterStorageKey)
+    const parsedFilters = savedFilters ? JSON.parse(savedFilters) : {}
+    parsedFilters[tabId] = state
+    sessionStorage.setItem(activeFilterStorageKey, JSON.stringify(parsedFilters))
+  }
+
+  function applyFilters(tabId, persist = true) {
+    const panel = document.querySelector(`[data-filter-panel="${tabId}"]`)
+    if (!panel) return
+
+    if (tabId === "projects" || tabId === "blog") {
+      const searchInput = panel.querySelector(`[data-tag-search="${tabId}"]`)
+      const tagCheckboxInputs = Array.from(
+        panel.querySelectorAll(`[data-tag-checkbox="${tabId}"]`),
+      )
+      const tagOptions = Array.from(panel.querySelectorAll("[data-tag-option]"))
+
+      const selectedTags = tagCheckboxInputs
+        .filter((checkbox) => checkbox.checked)
+        .map((checkbox) => checkbox.value)
+
+      const searchQuery = searchInput instanceof HTMLInputElement ? searchInput.value.trim().toLowerCase() : ""
+
+      tagOptions.forEach((option) => {
+        const tagName = option.dataset.tagName?.toLowerCase() ?? ""
+        option.hidden = searchQuery.length > 0 && !tagName.includes(searchQuery)
+      })
+
+      const items = Array.from(
+        document.querySelectorAll(`[data-tab-panel="${tabId}"] [data-filter-item="true"]`),
+      )
+
+      items.forEach((item) => {
+        const itemTags = (item.dataset.tags ?? "")
+          .split(",")
+          .map((tag) => tag.trim())
+          .filter(Boolean)
+        const matches =
+          selectedTags.length === 0 || itemTags.some((tag) => selectedTags.includes(tag))
+
+        item.hidden = !matches
+      })
+
+      if (persist) {
+        saveCurrentFilters(tabId, { tags: selectedTags, query: searchQuery })
+      }
+    }
+
+    if (tabId === "coursework") {
+      const selectedModes = Array.from(
+        panel.querySelectorAll(`[data-course-filter-checkbox="coursework"]`),
+      )
+        .filter((checkbox) => checkbox.checked)
+        .map((checkbox) => checkbox.value)
+
+      const items = Array.from(
+        document.querySelectorAll(`[data-tab-panel="coursework"] [data-filter-item="true"]`),
+      )
+
+      items.forEach((item) => {
+        const mode = item.dataset.recommended === "true" ? "recommended" : "not-recommended"
+        const matches = selectedModes.length === 0 || selectedModes.includes(mode)
+        item.hidden = !matches
+      })
+
+      const groups = Array.from(panel.querySelectorAll("[data-course-group]"))
+      groups.forEach((group) => {
+        const visibleItems = Array.from(group.querySelectorAll("[data-filter-item='true']")).some(
+          (item) => !item.hidden,
+        )
+        group.hidden = !visibleItems
+      })
+
+      if (persist) {
+        saveCurrentFilters(tabId, { modes: selectedModes })
+      }
+    }
+  }
+
+  filterPanels.forEach((panel) => {
+    const panelId = panel.dataset.filterPanel
+    const state = getCurrentFilters(panelId)
+
+    if (panelId === "projects" || panelId === "blog") {
+      const searchInput = panel.querySelector(`[data-tag-search="${panelId}"]`)
+      const tagCheckboxInputs = Array.from(
+        panel.querySelectorAll(`[data-tag-checkbox="${panelId}"]`),
+      )
+
+      if (searchInput instanceof HTMLInputElement && typeof state.query === "string") {
+        searchInput.value = state.query
+      }
+
+      tagCheckboxInputs.forEach((checkbox) => {
+        checkbox.checked = Array.isArray(state.tags) && state.tags.includes(checkbox.value)
+        checkbox.addEventListener("change", () => applyFilters(panelId))
+      })
+
+      if (searchInput instanceof HTMLInputElement) {
+        searchInput.addEventListener("input", () => applyFilters(panelId))
+      }
+    }
+
+    if (panelId === "coursework") {
+      const modeCheckboxes = Array.from(
+        panel.querySelectorAll(`[data-course-filter-checkbox="coursework"]`),
+      )
+
+      modeCheckboxes.forEach((checkbox) => {
+        checkbox.checked = Array.isArray(state.modes) && state.modes.includes(checkbox.value)
+        checkbox.addEventListener("change", () => applyFilters(panelId))
+      })
+    }
+
+    panel.hidden = panelId !== "projects"
+  })
 
   const savedTab = sessionStorage.getItem(activeTabStorageKey)
   if (savedTab && tabButtons.some((button) => button.dataset.tabButton === savedTab)) {
     setActiveTab(savedTab, false)
+  } else {
+    setActiveTab("projects", false)
   }
 
   tabButtons.forEach((button) => {

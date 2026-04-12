@@ -1,0 +1,64 @@
+---
+import { Picture } from "astro:assets"
+import type { CollectionEntry } from "astro:content"
+
+interface Props {
+  post: CollectionEntry<"blog">
+}
+
+const { post } = Astro.props
+
+const formattedDate = new Intl.DateTimeFormat("en-US", {
+  month: "short",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(post.data.date)
+
+const cover = post.data.cover
+---
+
+<a
+  id={post.id}
+  href={`/blog/${post.id}`}
+  data-filter-item="true"
+  data-tags={post.data.tags?.join(",") ?? ""}
+  class="block w-full overflow-hidden rounded-[28px] bg-white/65 shadow-card transition-all hover:-translate-y-1 hover:bg-white/80 hover:shadow-elevated"
+>
+  {cover ? (
+    <Picture
+      src={cover}
+      alt={post.data.coverAlt ?? post.data.title}
+      densities={[1, 2]}
+      quality="max"
+      class="w-full"
+      loading="lazy"
+    />
+  ) : null}
+  <div class="p-5 md:p-6">
+    <div class="flex items-start justify-between gap-4">
+      <h2 class="text-2xl leading-tight text-(--active-hue) font-triple weight-medium">
+        {post.data.title}
+      </h2>
+      <span class="shrink-0 text-sm text-(--active-muted) weight-normal">
+        {formattedDate}
+      </span>
+    </div>
+
+    {post.data.desc ? (
+      <p class="mt-2 text-base leading-7 text-(--active-muted) weight-normal">
+        {post.data.desc}
+      </p>
+    ) : null}
+
+    {post.data.tags?.length ? (
+      <div class="mt-4 flex flex-wrap gap-2">
+        {post.data.tags.map((tag) => (
+          <span class="rounded-full border border-black/10 bg-white/70 px-3 py-1 text-sm font-medium text-(--active-hue) shadow-sm">
+            {tag}
+          </span>
+        ))}
+      </div>
+    ) : null}
+  </div>
+</a>

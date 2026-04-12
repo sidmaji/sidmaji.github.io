@@ -1,0 +1,83 @@
+---
+import { Image } from "astro:assets"
+import type { CollectionEntry } from "astro:content"
+import { getCollection, render } from "astro:content"
+import Layout from "~/layouts/Layout.astro"
+
+interface Props {
+  post: CollectionEntry<"blog">
+}
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog")
+
+  return posts.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }))
+}
+
+const { post } = Astro.props as Props
+
+const formattedDate = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(post.data.date)
+
+const cover = post.data.cover
+
+const { Content } = await render(post)
+---
+
+<Layout
+  title={post.data.title}
+  desc={post.data.desc ?? "Blog post"}
+  img={post.data.cover?.src ?? "https://lachlanjc.com/opengraph-image.jpg"}
+  className="py-4 flex flex-col gap-12 md:gap-24"
+>
+  <article class="container mx-auto w-full max-w-none px-4 md:px-6">
+    <a
+      href="/"
+      class="sticky top-4 z-10 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/90 px-4 py-2 text-sm font-medium text-(--active-text) shadow-card backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"
+    >
+      &larr; Home
+    </a>
+
+    {cover ? (
+      <div class="mt-6 overflow-hidden rounded-[28px] bg-black/5 shadow-card md:mt-8">
+        <Image src={cover} alt={post.data.coverAlt ?? post.data.title} class="w-full" loading="eager" />
+      </div>
+    ) : null}
+
+    <div class="mt-8 w-full">
+      <p class="font-sans text-sm uppercase tracking-[0.22em] text-(--active-muted) weight-bold">
+        {formattedDate}
+      </p>
+      <h1 class="mt-2 text-5xl leading-none md:text-7xl text-(--active-hue) font-triple">
+        {post.data.title}
+      </h1>
+
+      {post.data.tags?.length ? (
+        <div class="mt-4 flex flex-wrap gap-2">
+          {post.data.tags.map((tag) => (
+            <span class="rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm font-medium text-(--active-hue) shadow-sm">
+              {tag}
+            </span>
+          ))}
+        </div>
+      ) : null}
+
+      {post.data.desc ? (
+        <p class="mt-6 text-xl text-balance text-(--active-text)">
+          {post.data.desc}
+        </p>
+      ) : null}
+    </div>
+
+    <div class="mt-10 w-full prose max-w-none prose-lg prose-a:no-underline prose-a:weight-medium prose-img:rounded-2xl prose-img:my-8 prose-img:w-full">
+      <Content />
+    </div>
+  </article>
+</Layout>
