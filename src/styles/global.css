@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Space+Grotesk:wght@300..700&display=swap");
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
 @layer reset {
   html {
     font-synthesis: none;
@@ -8,42 +12,9 @@
   }
 }
 
-@import "tailwindcss";
-@plugin "@tailwindcss/typography";
-
-@font-face {
-  font-family: PlusFallback;
-  src: local("Helvetica Neue");
-  ascent-override: 106.3%;
-  descent-override: 37.8%;
-  line-gap-override: 0%;
-  size-adjust: 102.79%;
-}
-@font-face {
-  font-family: TripleFallback;
-  src: local("Courier New");
-  ascent-override: 140%;
-  descent-override: 47.7%;
-  line-gap-override: 0%;
-  size-adjust: 79.04%;
-}
-
-@font-face {
-  src: url("/fonts/ABCOracleTripleVariable.woff2") format("woff2");
-  font-family: "ABCOracleTriple";
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  src: url("/fonts/ABCOraclePlusVariable.woff2") format("woff2");
-  font-family: "ABCOraclePlus";
-  font-style: normal;
-  font-display: swap;
-}
-
 @theme {
-  --font-triple: "ABCOracleTriple", TripleFallback, monospace;
-  --font-sans: "ABCOraclePlus", PlusFallback, sans-serif;
+  --font-triple: "Manrope", sans-serif;
+  --font-sans: "Manrope", sans-serif;
 
   --color-flame: oklch(0.7 0.24 32.74);
   --color-brat: oklch(0.67 0.18 117.23);
@@ -95,8 +66,9 @@
   --color-indigo: oklch(0.4 0.25 265.2);
   --color-eggplant: oklch(0.27 0.09 311.48);
 
-  --active-hue: var(--color-brat);
-  --active-saturation: 0.5;
+  --active-hue: var(--color-nimbus);
+  --active-saturation: 0;
+  --active-comp: 0.75;
   --active-bg: oklch(
     from var(--active-hue) calc(l + 0.4) calc(var(--active-saturation) / 8) h
   );
@@ -105,20 +77,10 @@
   );
   --active-muted: color-mix(in oklab, var(--active-text), lch(0 0 0 / 0.5) 50%);
   --active-accent: var(--color-spill);
-  /* COMING SOON
-  @media (prefers-color-scheme: dark) {
-    --active-hue: var(--color-flame);
-    --active-saturation: 0;
-    --active-bg: oklch(
-      from var(--active-hue) 0.15 c calc(var(--active-saturation) / 5)
-    );
-    --active-text: oklch(
-      from var(--active-hue) 0.9 c calc(var(--active-comp) / 5)
-    );
-    --active-muted: oklch(
-      from var(--active-hue) 0.5 c calc(var(--active-comp) / 8)
-    );
-  } */
+}
+
+:root {
+  color-scheme: light;
 }
 
 @view-transition {

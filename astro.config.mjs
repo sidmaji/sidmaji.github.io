@@ -1,12 +1,11 @@
 // @ts-check
-import mdx from "@astrojs/mdx"
-import { defineConfig } from "astro/config"
 import tailwindcss from "@tailwindcss/vite"
+import { defineConfig } from "astro/config"
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [mdx()],
   vite: {
+    // @ts-expect-error Vite's plugin types come from different package copies here.
     plugins: [tailwindcss()],
   },
 })
