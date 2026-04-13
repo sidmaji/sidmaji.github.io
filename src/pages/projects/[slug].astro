@@ -35,10 +35,14 @@ const { Content } = await render(project)
 <Layout
   title={project.data.name}
   desc={project.data.desc ?? "Project page"}
-  img={project.data.cover?.src ?? "https://lachlanjc.com/opengraph-image.jpg"}
+  img={project.data.cover?.src ??
+    "https://sidmaji.github.io/opengraph-image.jpg"}
   className="py-4 flex flex-col gap-12 md:gap-24"
 >
-  <article class="container mx-auto w-full max-w-none px-4 md:px-6" style={project.data.color ? `--project-accent: ${project.data.color};` : ""}>
+  <article
+    class="container mx-auto w-full max-w-none px-4 md:px-6"
+    style={project.data.color ? `--project-accent: ${project.data.color};` : ""}
+  >
     <a
       href="/"
       class="sticky top-4 z-10 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/90 px-4 py-2 text-sm font-medium text-(--active-text) shadow-card backdrop-blur transition-transform hover:-translate-y-0.5 hover:bg-white"
@@ -46,61 +50,81 @@ const { Content } = await render(project)
       &larr; Home
     </a>
 
-    <div class="mt-6 overflow-hidden rounded-[28px] bg-black/5 shadow-card md:mt-8">
-      {cover ? (
-        <Image
-          src={cover}
-          alt={project.data.coverAlt}
-          class="w-full"
-          loading="eager"
-        />
-      ) : (
-        <div class="flex aspect-video w-full items-center justify-center bg-white/70 px-6 text-center text-lg text-(--active-muted)">
-          {project.data.coverAlt}
-        </div>
-      )}
+    <div
+      class="mt-6 overflow-hidden rounded-[28px] bg-black/5 shadow-card md:mt-8"
+    >
+      {
+        cover ? (
+          <Image
+            src={cover}
+            alt={project.data.coverAlt}
+            class="w-full"
+            loading="eager"
+          />
+        ) : (
+          <div class="flex aspect-video w-full items-center justify-center bg-white/70 px-6 text-center text-lg text-(--active-muted)">
+            {project.data.coverAlt}
+          </div>
+        )
+      }
     </div>
 
     <div class="mt-8 w-full">
-      <p class="flex items-center font-sans text-sm uppercase tracking-[0.22em] text-(--active-muted) weight-bold">
-        <span class="h-2 w-2 rounded-full" style={project.data.color ? `background-color: ${project.data.color};` : "background-color: var(--active-muted);"} />
+      <p
+        class="flex items-center font-sans text-sm uppercase tracking-[0.22em] text-(--active-muted) weight-bold"
+      >
+        <span
+          class="h-2 w-2 rounded-full"
+          style={project.data.color
+            ? `background-color: ${project.data.color};`
+            : "background-color: var(--active-muted);"}
+        >
+        </span>
         {formattedDate}
       </p>
-      <h1 class="mt-2 text-5xl leading-none md:text-7xl text-(--active-hue) font-triple">
+      <h1
+        class="mt-2 text-5xl leading-none md:text-7xl text-(--active-hue) font-triple"
+      >
         {project.data.name}
       </h1>
 
-      {project.data.tags?.length ? (
-        <div class="mt-4 flex flex-wrap gap-2">
-          {project.data.tags.map((tag) => (
-            <span class="rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm font-medium text-(--active-hue) shadow-sm">
-              {tag}
-            </span>
-          ))}
-        </div>
-      ) : null}
+      {
+        project.data.tags?.length ? (
+          <div class="mt-4 flex flex-wrap gap-2">
+            {project.data.tags.map((tag) => (
+              <span class="rounded-full border border-black/10 bg-white/70 px-4 py-2 text-sm font-medium text-(--active-hue) shadow-sm">
+                {tag}
+              </span>
+            ))}
+          </div>
+        ) : null
+      }
 
-      {externalLinks.length ? (
-        <div class="mt-4 flex flex-wrap gap-2">
-          {externalLinks.map((link) => (
-            <a
-              href={link.url}
-              target={link.url.startsWith("http") ? "_blank" : undefined}
-              rel={link.url.startsWith("http") ? "noreferrer" : undefined}
-              class="rounded-full border border-transparent bg-(--active-hue) px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95"
-            >
-              {link.label}
-            </a>
-          ))}
-        </div>
-      ) : null}
+      {
+        externalLinks.length ? (
+          <div class="mt-4 flex flex-wrap gap-2">
+            {externalLinks.map((link) => (
+              <a
+                href={link.url}
+                target={link.url.startsWith("http") ? "_blank" : undefined}
+                rel={link.url.startsWith("http") ? "noreferrer" : undefined}
+                class="rounded-full border border-transparent bg-(--active-hue) px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:-translate-y-0.5 hover:opacity-95"
+              >
+                {link.label}
+              </a>
+            ))}
+          </div>
+        ) : null
+      }
 
       <p class="mt-6 text-xl text-balance text-(--active-text)">
         {project.data.desc}
       </p>
     </div>
 
-    <div class="mt-10 w-full prose max-w-none prose-lg prose-a:no-underline prose-a:weight-medium prose-img:rounded-2xl prose-img:my-8 prose-img:w-full">
+    <div
+      class="mt-10 w-full prose max-w-none prose-lg prose-a:no-underline prose-a:weight-medium prose-img:rounded-2xl prose-img:my-8 prose-img:w-full"
+    >
       <Content />
     </div>
   </article>

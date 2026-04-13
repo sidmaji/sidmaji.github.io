@@ -18,8 +18,9 @@ export async function getStaticPaths() {
 
 const { course } = Astro.props as Props
 
-const recommendationLabel = course.data.recommended ? "Recommended" : "Not recommended"
-const recommendationEmoji = course.data.recommended ? "👍" : "👎"
+const recommendationLabel = course.data.recommended
+  ? "Recommended"
+  : "Not recommended"
 
 const { Content } = await render(course)
 ---
@@ -38,25 +39,69 @@ const { Content } = await render(course)
     </a>
 
     <div class="mt-8 w-full max-w-4xl">
-      <p class="font-sans text-sm uppercase tracking-[0.22em] text-(--active-muted) weight-bold">
+      <p
+        class="font-sans text-sm uppercase tracking-[0.22em] text-(--active-muted) weight-bold"
+      >
         {course.data.quarter}
       </p>
-      <h1 class="mt-2 text-5xl leading-none md:text-7xl text-(--active-hue) font-triple">
+      <h1
+        class="mt-2 text-5xl leading-none md:text-7xl text-(--active-hue) font-triple"
+      >
         {course.data.name}
       </h1>
-      {course.data.professor ? (
-        <p class="mt-3 text-xl text-balance text-(--active-text)">
-          with {course.data.professor}
-        </p>
-      ) : null}
+      {
+        course.data.professor ? (
+          <p class="mt-3 text-xl text-balance text-(--active-text)">
+            with {course.data.professor}
+          </p>
+        ) : null
+      }
 
-      <p class="mt-4 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-base font-medium text-(--active-text) shadow-sm">
-        <span aria-hidden="true">{recommendationEmoji}</span>
+      <p
+        class="mt-4 inline-flex items-center gap-2 rounded-full bg-white/70 px-4 py-2 text-base font-medium text-(--active-text) shadow-sm"
+      >
+        {
+          course.data.recommended ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-thumbs-up shrink-0 text-(--active-hue)"
+              aria-hidden="true"
+            >
+              <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-thumbs-down shrink-0 text-(--active-hue)"
+              aria-hidden="true"
+            >
+              <path d="M10 15v4a3 3 0 0 0 3 3l4-9V2H5.72a2 2 0 0 0-2 1.7l-1.38 9a2 2 0 0 0 2 2.3zm7-13h2.67A2.31 2.31 0 0 1 22 4v7a2.31 2.31 0 0 1-2.33 2H17" />
+            </svg>
+          )
+        }
         {recommendationLabel}
       </p>
     </div>
 
-    <div class="mt-10 w-full prose max-w-none prose-lg prose-a:no-underline prose-a:weight-medium prose-img:rounded-2xl prose-img:my-8 prose-img:w-full">
+    <div
+      class="mt-10 w-full prose max-w-none prose-lg prose-a:no-underline prose-a:weight-medium prose-img:rounded-2xl prose-img:my-8 prose-img:w-full"
+    >
       <Content />
     </div>
   </article>
