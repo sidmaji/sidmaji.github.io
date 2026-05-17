@@ -222,7 +222,7 @@ export const siteConfig: SiteConfig = {
   },
   layout: {
     // [CONFIG:LAYOUT_CONTENT_WIDTH]
-    contentWidth: "45rem",
+    contentWidth: "50rem",
   },
   tableOfContents: {
     // [CONFIG:TABLE_OF_CONTENTS_ENABLED]
@@ -263,7 +263,7 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:COMMAND_PALETTE_SEARCH_PAGES]
       pages: false,
       // [CONFIG:COMMAND_PALETTE_SEARCH_PROJECTS]
-      projects: false,
+      projects: true,
       // [CONFIG:COMMAND_PALETTE_SEARCH_DOCS]
       docs: false,
     },
@@ -362,34 +362,34 @@ export const siteConfig: SiteConfig = {
       // [CONFIG:HOME_OPTIONS_RECENT_POSTS_ENABLED]
       enabled: true, // Show recent posts on homepage
       // [CONFIG:HOME_OPTIONS_RECENT_POSTS_COUNT]
-      count: 7, // Number of recent posts to show
+      count: 4, // Number of recent posts to show
     },
     projects: {
       // [CONFIG:HOME_OPTIONS_PROJECTS_ENABLED]
       enabled: true, // Show featured projects on homepage
       // [CONFIG:HOME_OPTIONS_PROJECTS_COUNT]
-      count: 2, // Number of projects to show
+      count: 4, // Number of projects to show
     },
     docs: {
       // [CONFIG:HOME_OPTIONS_DOCS_ENABLED]
-      enabled: true, // Show featured docs on homepage
+      enabled: false, // Show featured docs on homepage
       // [CONFIG:HOME_OPTIONS_DOCS_COUNT]
       count: 3, // Number of docs to show
     },
     blurb: {
       // [CONFIG:HOME_OPTIONS_BLURB_PLACEMENT]
-      placement: "below", // 'above' (at the top), 'below' (after content), or 'none' (disabled)
+      placement: "none", // 'above' (at the top), 'below' (after content), or 'none' (disabled)
     },
   },
 
   // Post Options
   postOptions: {
     // [CONFIG:POST_OPTIONS_POSTS_PER_PAGE]
-    postsPerPage: 6,
+    postsPerPage: 5,
     // [CONFIG:POST_OPTIONS_READING_TIME]
     readingTime: true,
     // [CONFIG:POST_OPTIONS_WORD_COUNT]
-    wordCount: true,
+    wordCount: false,
     // [CONFIG:POST_OPTIONS_TAGS]
     tags: true,
     linkedMentions: {
@@ -411,7 +411,7 @@ export const siteConfig: SiteConfig = {
     // [CONFIG:POST_OPTIONS_POST_NAVIGATION]
     postNavigation: true,
     // [CONFIG:POST_OPTIONS_SHOW_POST_CARD_COVER_IMAGES]
-    showPostCardCoverImages: "featured-and-posts", // "all" | "featured" | "home" | "posts" | "featured-and-posts" | "none"
+    showPostCardCoverImages: "featured", // "all" | "featured" | "home" | "posts" | "featured-and-posts" | "none"
     // [CONFIG:POST_OPTIONS_POST_CARD_ASPECT_RATIO]
     postCardAspectRatio: "og", // "16:9" | "4:3" | "3:2" | "og" | "square" | "golden" | "custom"
     // [CONFIG:POST_OPTIONS_CUSTOM_POST_CARD_ASPECT_RATIO]

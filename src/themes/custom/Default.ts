@@ -1,5 +1,5 @@
 // Custom theme extracted from Obsidian
-// Generated: 2026-05-12T01:59:08.632Z
+// Generated: 2026-05-17T19:18:49.489Z
 
 export const DefaultTheme = {
   primary: {

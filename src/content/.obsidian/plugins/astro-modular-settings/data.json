@@ -277,6 +277,6 @@
     "things"
   ],
   "customThemes": "",
-  "customThemeGenerationEnabled": true,
+  "customThemeGenerationEnabled": false,
   "removeRibbonIcon": false
 }
