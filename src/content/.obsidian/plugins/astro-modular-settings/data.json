@@ -1,0 +1,282 @@
+{
+  "runWizardOnStartup": true,
+  "currentTemplate": "standard",
+  "currentTheme": "custom",
+  "customThemeFile": "Default",
+  "contentOrganization": "file-based",
+  "themeColors": {
+    "mode": "simple",
+    "simpleColors": {
+      "accent": "#9779e2",
+      "background": "#191919"
+    },
+    "extractedColors": {
+      "primary": {
+        "50": "#f4f4f4",
+        "100": "#eaeaea",
+        "200": "#d5d5d5",
+        "300": "#bfbfbf",
+        "400": "#a0a0a0",
+        "500": "#808080",
+        "600": "#606060",
+        "700": "#2b2b2b",
+        "800": "#191919",
+        "900": "#141414",
+        "950": "#101010"
+      },
+      "highlight": {
+        "50": "#7d58da",
+        "100": "#7d58da",
+        "200": "#7d58da",
+        "300": "#9779e2",
+        "400": "#9779e2",
+        "500": "#9779e2",
+        "600": "#9779e2",
+        "700": "#9779e2",
+        "800": "#9779e2",
+        "900": "#9779e2"
+      }
+    },
+    "lastExtracted": "2026-05-12T01:59:02.435Z"
+  },
+  "siteInfo": {
+    "site": "https://sidmaji.github.io",
+    "title": "Siddhant Maji",
+    "description": "Siddhant Maji's personal website.",
+    "author": "Siddhant Maji",
+    "language": "en",
+    "faviconThemeAdaptive": true,
+    "defaultOgImageAlt": "Astro Modular logo."
+  },
+  "layout": {
+    "contentWidth": "50rem"
+  },
+  "tableOfContents": {
+    "enabled": true,
+    "depth": 4
+  },
+  "footer": {
+    "enabled": true,
+    "content": "© 2026 {author}.",
+    "showSocialIconsInFooter": true
+  },
+  "seo": {
+    "defaultOgImageAlt": "Astro Modular logo."
+  },
+  "navigation": {
+    "showNavigation": true,
+    "style": "traditional",
+    "showMobileMenu": true,
+    "pages": [
+      {
+        "title": "Posts",
+        "url": "/posts/"
+      },
+      {
+        "title": "Projects",
+        "url": "/projects/"
+      },
+      {
+        "title": "About",
+        "url": "/about/"
+      },
+      {
+        "title": "Resume",
+        "url": "/resume.pdf"
+      }
+    ],
+    "social": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com/sidmaji",
+        "icon": "github"
+      },
+      {
+        "title": "Instagram",
+        "url": "https://instagram.com/sidmaji0",
+        "icon": "instagram"
+      },
+      {
+        "title": "LinkedIn",
+        "url": "https://linkedin.com/in/siddhant-maji",
+        "icon": "square-linkedin"
+      }
+    ]
+  },
+  "commandPalette": {
+    "enabled": true,
+    "shortcut": "ctrl+K",
+    "placeholder": "Search posts",
+    "search": {
+      "posts": true,
+      "pages": false,
+      "projects": true,
+      "docs": false
+    },
+    "sections": {
+      "quickActions": true,
+      "pages": true,
+      "social": true
+    },
+    "quickActions": {
+      "enabled": true,
+      "toggleMode": true,
+      "graphView": true,
+      "changeTheme": true
+    }
+  },
+  "homeOptions": {
+    "featuredPost": {
+      "enabled": true,
+      "type": "latest",
+      "slug": "getting-started"
+    },
+    "recentPosts": {
+      "enabled": true,
+      "count": 4
+    },
+    "projects": {
+      "enabled": true,
+      "count": 4
+    },
+    "docs": {
+      "enabled": false,
+      "count": 3
+    },
+    "blurb": {
+      "placement": "none"
+    }
+  },
+  "postOptions": {
+    "postsPerPage": 5,
+    "readingTime": true,
+    "wordCount": false,
+    "tags": true,
+    "linkedMentions": {
+      "enabled": true,
+      "linkedMentionsCompact": false
+    },
+    "graphView": {
+      "enabled": true,
+      "showInSidebar": true,
+      "maxNodes": 100,
+      "showOrphanedPosts": true
+    },
+    "postNavigation": true,
+    "showPostCardCoverImages": "featured",
+    "postCardAspectRatio": "og",
+    "customPostCardAspectRatio": "2.5/1",
+    "comments": {
+      "enabled": false,
+      "provider": "giscus",
+      "rawScript": "",
+      "repo": "",
+      "repoId": "",
+      "category": "",
+      "categoryId": "",
+      "mapping": "",
+      "strict": "",
+      "reactions": "",
+      "metadata": "",
+      "inputPosition": "",
+      "theme": "",
+      "lang": "",
+      "loading": ""
+    }
+  },
+  "features": {
+    "commandPalette": true,
+    "readingTime": true,
+    "linkedMentions": true,
+    "linkedMentionsCompact": false,
+    "graphView": true,
+    "postNavigation": true,
+    "hideScrollBar": false,
+    "scrollToTop": true,
+    "showSocialIconsInFooter": true,
+    "profilePicture": false,
+    "comments": false,
+    "featureButton": "mode",
+    "showPostCardCoverImages": "featured-and-posts",
+    "postCardAspectRatio": "og",
+    "customPostCardAspectRatio": "2.5/1",
+    "quickActions": {
+      "enabled": true,
+      "toggleMode": true,
+      "graphView": true,
+      "changeTheme": true
+    }
+  },
+  "typography": {
+    "headingFont": "Inter",
+    "proseFont": "Inter",
+    "monoFont": "JetBrains Mono",
+    "fontSource": "cdn",
+    "fontDisplay": "swap",
+    "customFonts": {
+      "heading": "Manrope",
+      "prose": "Manrope",
+      "mono": "JetBrains Mono",
+      "urls": "https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap, https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800"
+    }
+  },
+  "optionalFeatures": {
+    "profilePicture": {
+      "enabled": false,
+      "image": "/profile.jpg",
+      "alt": "Profile picture",
+      "size": "md",
+      "url": "",
+      "placement": "footer",
+      "style": "circle"
+    },
+    "comments": {
+      "enabled": false,
+      "provider": "giscus",
+      "rawScript": "",
+      "repo": "",
+      "repoId": "",
+      "category": "",
+      "categoryId": "",
+      "mapping": "",
+      "strict": "",
+      "reactions": "",
+      "metadata": "",
+      "inputPosition": "",
+      "theme": "",
+      "lang": "",
+      "loading": ""
+    }
+  },
+  "deployment": {
+    "platform": "github-pages"
+  },
+  "pluginConfig": {
+    "obsidianSettings": {
+      "attachmentLocation": "subfolder",
+      "subfolderName": "attachments"
+    },
+    "astroComposerSettings": {
+      "creationMode": "file",
+      "indexFileName": "index"
+    },
+    "imageInserterSettings": {
+      "valueFormat": "[[attachments/{image-url}]]",
+      "insertFormat": "[[attachments/{image-url}]]"
+    }
+  },
+  "optionalContentTypes": {
+    "projects": true,
+    "docs": true
+  },
+  "availableThemes": [
+    "oxygen",
+    "minimal",
+    "atom",
+    "charcoal",
+    "things"
+  ],
+  "customThemes": "",
+  "customThemeGenerationEnabled": true,
+  "removeRibbonIcon": false
+}
