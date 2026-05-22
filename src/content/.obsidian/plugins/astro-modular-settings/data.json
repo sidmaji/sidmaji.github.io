@@ -57,7 +57,7 @@
   },
   "footer": {
     "enabled": true,
-    "content": "© 2026 {author}.",
+    "content": "",
     "showSocialIconsInFooter": true
   },
   "seo": {
@@ -127,7 +127,7 @@
   },
   "homeOptions": {
     "featuredPost": {
-      "enabled": true,
+      "enabled": false,
       "type": "latest",
       "slug": "getting-started"
     },
