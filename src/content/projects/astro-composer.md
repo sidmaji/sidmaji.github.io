@@ -6,8 +6,8 @@ categories:
   - Obsidian
   - Astro
   - Plugin
-repositoryUrl:
-projectUrl: https://github.com/davidvkimball/obsidian-astro-composer
+repositoryUrl: https://github.com/davidvkimball/obsidian-astro-composer
+projectUrl:
 status: in-progress
 image: "[[attachments/rock.png]]"
 imageAlt: Gray, rocky wall

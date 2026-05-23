@@ -1,7 +1,7 @@
 ---
-title: Setup
+title: Hardware/Desk Setup
 date: 2026-05-21
-description: Hardware/desk setup.
+description: My hardware and desk setup (devices I use daily).
 tags:
   - tools
   - hardware
@@ -11,12 +11,14 @@ imageAlt: ""
 imageOG: false
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
+targetKeyword:
 draft: false
 aliases:
   - desk-setup
   - hardware
+  - setup
 ---
+
 
 ## Daily Devices
 - [Google FitBit Air](https://store.google.com/product/google_fitbit_air)

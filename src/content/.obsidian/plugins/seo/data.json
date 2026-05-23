@@ -36,6 +36,351 @@
   "duplicateThreshold": 80,
   "cachedGlobalResults": [
     {
+      "file": "posts/stuff-i-want-to-buy.md",
+      "displayName": "Stuff I Want to Buy",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": true,
+            "message": "Good title length: 35 characters (Stuff I Want to Buy + \" - Astro Modular\")",
+            "severity": "info"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 34 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
+          }
+        ],
+        "keywordInTitle": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
+        "keywordInDescription": [],
+        "keywordInHeadings": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
+        "keywordInSlug": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
+        "slugFormat": [],
+        "keywordDensity": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": true,
+            "message": "Good content length: 309 words",
+            "severity": "info"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://www.goat.com/sneakers/2002r-gore-tex-magnet-grey-m2002rxa",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 42,
+              "searchText": "https://www.goat.com/sneakers/2002r-gore-tex-magnet-grey-m2002rxa",
+              "context": "---\n## Shoes\n- [NB 2002r GORE-TEX](https://www.goat.com/sneakers/2002r-gore-tex-magnet-grey-m2002rxa)\n- [Yeezy 500](https://www.goat.com/sneakers/yeezy-desert-rat-500-utility-black-f36640)\n- [Jordan 3 Muslin](https://www.goat.com/sneakers/air-jordan-3-retro-se-canvas-dh7139-100)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.goat.com/sneakers/yeezy-desert-rat-500-utility-black-f36640",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 43,
+              "searchText": "https://www.goat.com/sneakers/yeezy-desert-rat-500-utility-black-f36640",
+              "context": "## Shoes\n- [NB 2002r GORE-TEX](https://www.goat.com/sneakers/2002r-gore-tex-magnet-grey-m2002rxa)\n- [Yeezy 500](https://www.goat.com/sneakers/yeezy-desert-rat-500-utility-black-f36640)\n- [Jordan 3 Muslin](https://www.goat.com/sneakers/air-jordan-3-retro-se-canvas-dh7139-100)\n- [Jordan 3 Animal Instinct](https://www.goat.com/sneakers/air-jordan-3-retro-sp-animal-pack-ck4344-002)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.goat.com/sneakers/air-jordan-3-retro-se-canvas-dh7139-100",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 44,
+              "searchText": "https://www.goat.com/sneakers/air-jordan-3-retro-se-canvas-dh7139-100",
+              "context": "- [NB 2002r GORE-TEX](https://www.goat.com/sneakers/2002r-gore-tex-magnet-grey-m2002rxa)\n- [Yeezy 500](https://www.goat.com/sneakers/yeezy-desert-rat-500-utility-black-f36640)\n- [Jordan 3 Muslin](https://www.goat.com/sneakers/air-jordan-3-retro-se-canvas-dh7139-100)\n- [Jordan 3 Animal Instinct](https://www.goat.com/sneakers/air-jordan-3-retro-sp-animal-pack-ck4344-002)\n- [Margiela GATs](https://www.goat.com/sneakers/maison-margiela-replica-lemon-s57ws0236-p1895-t3163)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.goat.com/sneakers/air-jordan-3-retro-sp-animal-pack-ck4344-002",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 45,
+              "searchText": "https://www.goat.com/sneakers/air-jordan-3-retro-sp-animal-pack-ck4344-002",
+              "context": "- [Yeezy 500](https://www.goat.com/sneakers/yeezy-desert-rat-500-utility-black-f36640)\n- [Jordan 3 Muslin](https://www.goat.com/sneakers/air-jordan-3-retro-se-canvas-dh7139-100)\n- [Jordan 3 Animal Instinct](https://www.goat.com/sneakers/air-jordan-3-retro-sp-animal-pack-ck4344-002)\n- [Margiela GATs](https://www.goat.com/sneakers/maison-margiela-replica-lemon-s57ws0236-p1895-t3163)\n- [Salomon ACS Pro](https://www.goat.com/sneakers/acs-pro-white-vanilla-ice-l47179900)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.goat.com/sneakers/maison-margiela-replica-lemon-s57ws0236-p1895-t3163",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 46,
+              "searchText": "https://www.goat.com/sneakers/maison-margiela-replica-lemon-s57ws0236-p1895-t3163",
+              "context": "- [Jordan 3 Muslin](https://www.goat.com/sneakers/air-jordan-3-retro-se-canvas-dh7139-100)\n- [Jordan 3 Animal Instinct](https://www.goat.com/sneakers/air-jordan-3-retro-sp-animal-pack-ck4344-002)\n- [Margiela GATs](https://www.goat.com/sneakers/maison-margiela-replica-lemon-s57ws0236-p1895-t3163)\n- [Salomon ACS Pro](https://www.goat.com/sneakers/acs-pro-white-vanilla-ice-l47179900)\n- [Birkenstock Kyoto](https://www.birkenstock.com/us/kyoto-shearling-suede-leather%2Ffur/kyotoshearling-shearling-suedeleather-0-eva-u_1.html)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.goat.com/sneakers/acs-pro-white-vanilla-ice-l47179900",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 47,
+              "searchText": "https://www.goat.com/sneakers/acs-pro-white-vanilla-ice-l47179900",
+              "context": "- [Jordan 3 Animal Instinct](https://www.goat.com/sneakers/air-jordan-3-retro-sp-animal-pack-ck4344-002)\n- [Margiela GATs](https://www.goat.com/sneakers/maison-margiela-replica-lemon-s57ws0236-p1895-t3163)\n- [Salomon ACS Pro](https://www.goat.com/sneakers/acs-pro-white-vanilla-ice-l47179900)\n- [Birkenstock Kyoto](https://www.birkenstock.com/us/kyoto-shearling-suede-leather%2Ffur/kyotoshearling-shearling-suedeleather-0-eva-u_1.html)\n- [Nike Dunk Low](https://www.goat.com/sneakers/dover-street-market-x-dunk-low-white-velvet-dh2686-100)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.birkenstock.com/us/kyoto-shearling-suede-leather%2Ffur/kyotoshearling-shearling-suedeleather-0-eva-u_1.html",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 48,
+              "searchText": "https://www.birkenstock.com/us/kyoto-shearling-suede-leather%2Ffur/kyotoshearling-shearling-suedeleather-0-eva-u_1.html",
+              "context": "- [Margiela GATs](https://www.goat.com/sneakers/maison-margiela-replica-lemon-s57ws0236-p1895-t3163)\n- [Salomon ACS Pro](https://www.goat.com/sneakers/acs-pro-white-vanilla-ice-l47179900)\n- [Birkenstock Kyoto](https://www.birkenstock.com/us/kyoto-shearling-suede-leather%2Ffur/kyotoshearling-shearling-suedeleather-0-eva-u_1.html)\n- [Nike Dunk Low](https://www.goat.com/sneakers/dover-street-market-x-dunk-low-white-velvet-dh2686-100)\n- [Adidas Orketro](https://www.goat.com/sneakers/sean-wotherspoon-x-orketro-off-white-hq7236)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.goat.com/sneakers/dover-street-market-x-dunk-low-white-velvet-dh2686-100",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 49,
+              "searchText": "https://www.goat.com/sneakers/dover-street-market-x-dunk-low-white-velvet-dh2686-100",
+              "context": "- [Salomon ACS Pro](https://www.goat.com/sneakers/acs-pro-white-vanilla-ice-l47179900)\n- [Birkenstock Kyoto](https://www.birkenstock.com/us/kyoto-shearling-suede-leather%2Ffur/kyotoshearling-shearling-suedeleather-0-eva-u_1.html)\n- [Nike Dunk Low](https://www.goat.com/sneakers/dover-street-market-x-dunk-low-white-velvet-dh2686-100)\n- [Adidas Orketro](https://www.goat.com/sneakers/sean-wotherspoon-x-orketro-off-white-hq7236)\n- [Vans Nakamoto](https://www.goat.com/sneakers/satoshi-nakamoto-x-old-skool-reissue-36-speckled-moving-blanket-grey-vn000dc0fng)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.goat.com/sneakers/sean-wotherspoon-x-orketro-off-white-hq7236",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 50,
+              "searchText": "https://www.goat.com/sneakers/sean-wotherspoon-x-orketro-off-white-hq7236",
+              "context": "- [Birkenstock Kyoto](https://www.birkenstock.com/us/kyoto-shearling-suede-leather%2Ffur/kyotoshearling-shearling-suedeleather-0-eva-u_1.html)\n- [Nike Dunk Low](https://www.goat.com/sneakers/dover-street-market-x-dunk-low-white-velvet-dh2686-100)\n- [Adidas Orketro](https://www.goat.com/sneakers/sean-wotherspoon-x-orketro-off-white-hq7236)\n- [Vans Nakamoto](https://www.goat.com/sneakers/satoshi-nakamoto-x-old-skool-reissue-36-speckled-moving-blanket-grey-vn000dc0fng)\n- [Balenciaga Crocodile High Top](https://theluxurycloset.com/women/balenciaga-purple-crocodile-leather-and-suede-high-top-sneakers-size-39-p767858)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.goat.com/sneakers/satoshi-nakamoto-x-old-skool-reissue-36-speckled-moving-blanket-grey-vn000dc0fng",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 51,
+              "searchText": "https://www.goat.com/sneakers/satoshi-nakamoto-x-old-skool-reissue-36-speckled-moving-blanket-grey-vn000dc0fng",
+              "context": "- [Nike Dunk Low](https://www.goat.com/sneakers/dover-street-market-x-dunk-low-white-velvet-dh2686-100)\n- [Adidas Orketro](https://www.goat.com/sneakers/sean-wotherspoon-x-orketro-off-white-hq7236)\n- [Vans Nakamoto](https://www.goat.com/sneakers/satoshi-nakamoto-x-old-skool-reissue-36-speckled-moving-blanket-grey-vn000dc0fng)\n- [Balenciaga Crocodile High Top](https://theluxurycloset.com/women/balenciaga-purple-crocodile-leather-and-suede-high-top-sneakers-size-39-p767858)\n---"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://theluxurycloset.com/women/balenciaga-purple-crocodile-leather-and-suede-high-top-sneakers-size-39-p767858",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 52,
+              "searchText": "https://theluxurycloset.com/women/balenciaga-purple-crocodile-leather-and-suede-high-top-sneakers-size-39-p767858",
+              "context": "- [Adidas Orketro](https://www.goat.com/sneakers/sean-wotherspoon-x-orketro-off-white-hq7236)\n- [Vans Nakamoto](https://www.goat.com/sneakers/satoshi-nakamoto-x-old-skool-reissue-36-speckled-moving-blanket-grey-vn000dc0fng)\n- [Balenciaga Crocodile High Top](https://theluxurycloset.com/women/balenciaga-purple-crocodile-leather-and-suede-high-top-sneakers-size-39-p767858)\n---\n## College Shopping List"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/Fj%C3%A4llr%C3%A4ven-Skule-20-Backpack-Basalt/dp/B0DXQFJ6YP?th=1",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 55,
+              "searchText": "https://www.amazon.com/Fj%C3%A4llr%C3%A4ven-Skule-20-Backpack-Basalt/dp/B0DXQFJ6YP?th=1",
+              "context": "---\n## College Shopping List\n- [Backpack](https://www.amazon.com/Fj%C3%A4llr%C3%A4ven-Skule-20-Backpack-Basalt/dp/B0DXQFJ6YP?th=1)\n- [Kokuyo Campus Binder Notebooks](https://www.amazon.com/Binders-Notebook-Refiller-Capacity-Perfect/dp/B079CY4R9M/)\n- [Uni-Ball ZENTO Flow](https://www.amazon.com/%E4%B8%89%E8%8F%B1%E9%89%9B%E7%AD%86-Rollerball-Water-Based-Ultra-Smooth-UBNZF05-7/dp/B0DWZVRJG5/ref=sr_1_6?crid=3SLZ27RZ8KRM&dib=eyJ2IjoiMSJ9.5mBefvdgOoQHLn9ydI7SdjUrrDDoDHc4Nqs7x58CP8M6r5CJgN7-NQEwm4S7BJwDWbWDRpwUkB1S_AjthC_Rs99ppxBaTMhd8Ict5200RZx8aCLd1AMYhftqYR8ltsloMzQJDSu69BukFyr_dZXIHA0iA5BYI6g8GgVW73VBQUFe07GNexlDXWWkpbb1A5rRaJYanty-TaUI3u-pIbhVUvlDYvkcyuTC4yKFL-NeHeudAtsLOlbSSsvxD46tIDH5Aspty8St8hN3Q8pFSwqW_pz_SVo9RRkSP4VF7hRLhsY.0DwoD-LSITnrwMzfI9ronvYhyS4pIVVvV9TNfBh5jGQ&dib_tag=se&keywords=uni+ball+zento&qid=1777171396&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=uni+ball+zento%2Caps%2C214&sr=8-6)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/Binders-Notebook-Refiller-Capacity-Perfect/dp/B079CY4R9M/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 56,
+              "searchText": "https://www.amazon.com/Binders-Notebook-Refiller-Capacity-Perfect/dp/B079CY4R9M/",
+              "context": "## College Shopping List\n- [Backpack](https://www.amazon.com/Fj%C3%A4llr%C3%A4ven-Skule-20-Backpack-Basalt/dp/B0DXQFJ6YP?th=1)\n- [Kokuyo Campus Binder Notebooks](https://www.amazon.com/Binders-Notebook-Refiller-Capacity-Perfect/dp/B079CY4R9M/)\n- [Uni-Ball ZENTO Flow](https://www.amazon.com/%E4%B8%89%E8%8F%B1%E9%89%9B%E7%AD%86-Rollerball-Water-Based-Ultra-Smooth-UBNZF05-7/dp/B0DWZVRJG5/ref=sr_1_6?crid=3SLZ27RZ8KRM&dib=eyJ2IjoiMSJ9.5mBefvdgOoQHLn9ydI7SdjUrrDDoDHc4Nqs7x58CP8M6r5CJgN7-NQEwm4S7BJwDWbWDRpwUkB1S_AjthC_Rs99ppxBaTMhd8Ict5200RZx8aCLd1AMYhftqYR8ltsloMzQJDSu69BukFyr_dZXIHA0iA5BYI6g8GgVW73VBQUFe07GNexlDXWWkpbb1A5rRaJYanty-TaUI3u-pIbhVUvlDYvkcyuTC4yKFL-NeHeudAtsLOlbSSsvxD46tIDH5Aspty8St8hN3Q8pFSwqW_pz_SVo9RRkSP4VF7hRLhsY.0DwoD-LSITnrwMzfI9ronvYhyS4pIVVvV9TNfBh5jGQ&dib_tag=se&keywords=uni+ball+zento&qid=1777171396&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=uni+ball+zento%2Caps%2C214&sr=8-6)\n\t- [Uni-ball ZENTO Gel Pen Refill](https://www.amazon.com/uniball-Water-Based-UBR-Z-05-Compatible-UBRZ05-24/dp/B0DY1Q117J)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/%E4%B8%89%E8%8F%B1%E9%89%9B%E7%AD%86-Rollerball-Water-Based-Ultra-Smooth-UBNZF05-7/dp/B0DWZVRJG5/ref=sr_1_6?crid=3SLZ27RZ8KRM&dib=eyJ2IjoiMSJ9.5mBefvdgOoQHLn9ydI7SdjUrrDDoDHc4Nqs7x58CP8M6r5CJgN7-NQEwm4S7BJwDWbWDRpwUkB1S_AjthC_Rs99ppxBaTMhd8Ict5200RZx8aCLd1AMYhftqYR8ltsloMzQJDSu69BukFyr_dZXIHA0iA5BYI6g8GgVW73VBQUFe07GNexlDXWWkpbb1A5rRaJYanty-TaUI3u-pIbhVUvlDYvkcyuTC4yKFL-NeHeudAtsLOlbSSsvxD46tIDH5Aspty8St8hN3Q8pFSwqW_pz_SVo9RRkSP4VF7hRLhsY.0DwoD-LSITnrwMzfI9ronvYhyS4pIVVvV9TNfBh5jGQ&dib_tag=se&keywords=uni+ball+zento&qid=1777171396&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=uni+ball+zento%2Caps%2C214&sr=8-6",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 57,
+              "searchText": "https://www.amazon.com/%E4%B8%89%E8%8F%B1%E9%89%9B%E7%AD%86-Rollerball-Water-Based-Ultra-Smooth-UBNZF05-7/dp/B0DWZVRJG5/ref=sr_1_6?crid=3SLZ27RZ8KRM&dib=eyJ2IjoiMSJ9.5mBefvdgOoQHLn9ydI7SdjUrrDDoDHc4Nqs7x58CP8M6r5CJgN7-NQEwm4S7BJwDWbWDRpwUkB1S_AjthC_Rs99ppxBaTMhd8Ict5200RZx8aCLd1AMYhftqYR8ltsloMzQJDSu69BukFyr_dZXIHA0iA5BYI6g8GgVW73VBQUFe07GNexlDXWWkpbb1A5rRaJYanty-TaUI3u-pIbhVUvlDYvkcyuTC4yKFL-NeHeudAtsLOlbSSsvxD46tIDH5Aspty8St8hN3Q8pFSwqW_pz_SVo9RRkSP4VF7hRLhsY.0DwoD-LSITnrwMzfI9ronvYhyS4pIVVvV9TNfBh5jGQ&dib_tag=se&keywords=uni+ball+zento&qid=1777171396&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=uni+ball+zento%2Caps%2C214&sr=8-6",
+              "context": "- [Backpack](https://www.amazon.com/Fj%C3%A4llr%C3%A4ven-Skule-20-Backpack-Basalt/dp/B0DXQFJ6YP?th=1)\n- [Kokuyo Campus Binder Notebooks](https://www.amazon.com/Binders-Notebook-Refiller-Capacity-Perfect/dp/B079CY4R9M/)\n- [Uni-Ball ZENTO Flow](https://www.amazon.com/%E4%B8%89%E8%8F%B1%E9%89%9B%E7%AD%86-Rollerball-Water-Based-Ultra-Smooth-UBNZF05-7/dp/B0DWZVRJG5/ref=sr_1_6?crid=3SLZ27RZ8KRM&dib=eyJ2IjoiMSJ9.5mBefvdgOoQHLn9ydI7SdjUrrDDoDHc4Nqs7x58CP8M6r5CJgN7-NQEwm4S7BJwDWbWDRpwUkB1S_AjthC_Rs99ppxBaTMhd8Ict5200RZx8aCLd1AMYhftqYR8ltsloMzQJDSu69BukFyr_dZXIHA0iA5BYI6g8GgVW73VBQUFe07GNexlDXWWkpbb1A5rRaJYanty-TaUI3u-pIbhVUvlDYvkcyuTC4yKFL-NeHeudAtsLOlbSSsvxD46tIDH5Aspty8St8hN3Q8pFSwqW_pz_SVo9RRkSP4VF7hRLhsY.0DwoD-LSITnrwMzfI9ronvYhyS4pIVVvV9TNfBh5jGQ&dib_tag=se&keywords=uni+ball+zento&qid=1777171396&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=uni+ball+zento%2Caps%2C214&sr=8-6)\n\t- [Uni-ball ZENTO Gel Pen Refill](https://www.amazon.com/uniball-Water-Based-UBR-Z-05-Compatible-UBRZ05-24/dp/B0DY1Q117J)\n- [Uni Kuru Toga Advance](https://www.amazon.com/uni-Kurutoga-Mechanical-Metallic-M510301P-43/dp/B0845V47FR)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/uniball-Water-Based-UBR-Z-05-Compatible-UBRZ05-24/dp/B0DY1Q117J",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 58,
+              "searchText": "https://www.amazon.com/uniball-Water-Based-UBR-Z-05-Compatible-UBRZ05-24/dp/B0DY1Q117J",
+              "context": "- [Kokuyo Campus Binder Notebooks](https://www.amazon.com/Binders-Notebook-Refiller-Capacity-Perfect/dp/B079CY4R9M/)\n- [Uni-Ball ZENTO Flow](https://www.amazon.com/%E4%B8%89%E8%8F%B1%E9%89%9B%E7%AD%86-Rollerball-Water-Based-Ultra-Smooth-UBNZF05-7/dp/B0DWZVRJG5/ref=sr_1_6?crid=3SLZ27RZ8KRM&dib=eyJ2IjoiMSJ9.5mBefvdgOoQHLn9ydI7SdjUrrDDoDHc4Nqs7x58CP8M6r5CJgN7-NQEwm4S7BJwDWbWDRpwUkB1S_AjthC_Rs99ppxBaTMhd8Ict5200RZx8aCLd1AMYhftqYR8ltsloMzQJDSu69BukFyr_dZXIHA0iA5BYI6g8GgVW73VBQUFe07GNexlDXWWkpbb1A5rRaJYanty-TaUI3u-pIbhVUvlDYvkcyuTC4yKFL-NeHeudAtsLOlbSSsvxD46tIDH5Aspty8St8hN3Q8pFSwqW_pz_SVo9RRkSP4VF7hRLhsY.0DwoD-LSITnrwMzfI9ronvYhyS4pIVVvV9TNfBh5jGQ&dib_tag=se&keywords=uni+ball+zento&qid=1777171396&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=uni+ball+zento%2Caps%2C214&sr=8-6)\n\t- [Uni-ball ZENTO Gel Pen Refill](https://www.amazon.com/uniball-Water-Based-UBR-Z-05-Compatible-UBRZ05-24/dp/B0DY1Q117J)\n- [Uni Kuru Toga Advance](https://www.amazon.com/uni-Kurutoga-Mechanical-Metallic-M510301P-43/dp/B0845V47FR)\n\t- [Pencil Lead](https://www.amazon.com/Pencil-Lead-Smudge-Proof-Leads-0-5mm/dp/B097SV9RD5)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/uni-Kurutoga-Mechanical-Metallic-M510301P-43/dp/B0845V47FR",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 59,
+              "searchText": "https://www.amazon.com/uni-Kurutoga-Mechanical-Metallic-M510301P-43/dp/B0845V47FR",
+              "context": "- [Uni-Ball ZENTO Flow](https://www.amazon.com/%E4%B8%89%E8%8F%B1%E9%89%9B%E7%AD%86-Rollerball-Water-Based-Ultra-Smooth-UBNZF05-7/dp/B0DWZVRJG5/ref=sr_1_6?crid=3SLZ27RZ8KRM&dib=eyJ2IjoiMSJ9.5mBefvdgOoQHLn9ydI7SdjUrrDDoDHc4Nqs7x58CP8M6r5CJgN7-NQEwm4S7BJwDWbWDRpwUkB1S_AjthC_Rs99ppxBaTMhd8Ict5200RZx8aCLd1AMYhftqYR8ltsloMzQJDSu69BukFyr_dZXIHA0iA5BYI6g8GgVW73VBQUFe07GNexlDXWWkpbb1A5rRaJYanty-TaUI3u-pIbhVUvlDYvkcyuTC4yKFL-NeHeudAtsLOlbSSsvxD46tIDH5Aspty8St8hN3Q8pFSwqW_pz_SVo9RRkSP4VF7hRLhsY.0DwoD-LSITnrwMzfI9ronvYhyS4pIVVvV9TNfBh5jGQ&dib_tag=se&keywords=uni+ball+zento&qid=1777171396&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sprefix=uni+ball+zento%2Caps%2C214&sr=8-6)\n\t- [Uni-ball ZENTO Gel Pen Refill](https://www.amazon.com/uniball-Water-Based-UBR-Z-05-Compatible-UBRZ05-24/dp/B0DY1Q117J)\n- [Uni Kuru Toga Advance](https://www.amazon.com/uni-Kurutoga-Mechanical-Metallic-M510301P-43/dp/B0845V47FR)\n\t- [Pencil Lead](https://www.amazon.com/Pencil-Lead-Smudge-Proof-Leads-0-5mm/dp/B097SV9RD5)\n- [Eraser](https://www.amazon.com/Sakura-50258-Sumogrip-Premium-Eraser/dp/B06XTRSLSN)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/Pencil-Lead-Smudge-Proof-Leads-0-5mm/dp/B097SV9RD5",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 60,
+              "searchText": "https://www.amazon.com/Pencil-Lead-Smudge-Proof-Leads-0-5mm/dp/B097SV9RD5",
+              "context": "\t- [Uni-ball ZENTO Gel Pen Refill](https://www.amazon.com/uniball-Water-Based-UBR-Z-05-Compatible-UBRZ05-24/dp/B0DY1Q117J)\n- [Uni Kuru Toga Advance](https://www.amazon.com/uni-Kurutoga-Mechanical-Metallic-M510301P-43/dp/B0845V47FR)\n\t- [Pencil Lead](https://www.amazon.com/Pencil-Lead-Smudge-Proof-Leads-0-5mm/dp/B097SV9RD5)\n- [Eraser](https://www.amazon.com/Sakura-50258-Sumogrip-Premium-Eraser/dp/B06XTRSLSN)\n- [Water Bottle](https://www.amazon.com/Owala-FreeSip-Insulated-Stainless-Two-Way/dp/B0FDS4Z6YF)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/Sakura-50258-Sumogrip-Premium-Eraser/dp/B06XTRSLSN",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 61,
+              "searchText": "https://www.amazon.com/Sakura-50258-Sumogrip-Premium-Eraser/dp/B06XTRSLSN",
+              "context": "- [Uni Kuru Toga Advance](https://www.amazon.com/uni-Kurutoga-Mechanical-Metallic-M510301P-43/dp/B0845V47FR)\n\t- [Pencil Lead](https://www.amazon.com/Pencil-Lead-Smudge-Proof-Leads-0-5mm/dp/B097SV9RD5)\n- [Eraser](https://www.amazon.com/Sakura-50258-Sumogrip-Premium-Eraser/dp/B06XTRSLSN)\n- [Water Bottle](https://www.amazon.com/Owala-FreeSip-Insulated-Stainless-Two-Way/dp/B0FDS4Z6YF)\n- [Desk Lamp](https://www.amazon.com/Honeywell-SunturaluxTM-Charging-Ports-HWT-H01/dp/B0C277LF46) - [Setup](hardware-desk-setup.md)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/Owala-FreeSip-Insulated-Stainless-Two-Way/dp/B0FDS4Z6YF",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 62,
+              "searchText": "https://www.amazon.com/Owala-FreeSip-Insulated-Stainless-Two-Way/dp/B0FDS4Z6YF",
+              "context": "\t- [Pencil Lead](https://www.amazon.com/Pencil-Lead-Smudge-Proof-Leads-0-5mm/dp/B097SV9RD5)\n- [Eraser](https://www.amazon.com/Sakura-50258-Sumogrip-Premium-Eraser/dp/B06XTRSLSN)\n- [Water Bottle](https://www.amazon.com/Owala-FreeSip-Insulated-Stainless-Two-Way/dp/B0FDS4Z6YF)\n- [Desk Lamp](https://www.amazon.com/Honeywell-SunturaluxTM-Charging-Ports-HWT-H01/dp/B0C277LF46) - [Setup](hardware-desk-setup.md)\n- Extra-long Twin Sheets"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/Honeywell-SunturaluxTM-Charging-Ports-HWT-H01/dp/B0C277LF46",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 63,
+              "searchText": "https://www.amazon.com/Honeywell-SunturaluxTM-Charging-Ports-HWT-H01/dp/B0C277LF46",
+              "context": "- [Eraser](https://www.amazon.com/Sakura-50258-Sumogrip-Premium-Eraser/dp/B06XTRSLSN)\n- [Water Bottle](https://www.amazon.com/Owala-FreeSip-Insulated-Stainless-Two-Way/dp/B0FDS4Z6YF)\n- [Desk Lamp](https://www.amazon.com/Honeywell-SunturaluxTM-Charging-Ports-HWT-H01/dp/B0C277LF46) - [Setup](hardware-desk-setup.md)\n- Extra-long Twin Sheets\n- Blanket"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 18.5 (Very difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 75,
+      "issuesCount": 0,
+      "warningsCount": 2,
+      "noticesCount": 24
+    },
+    {
       "file": "posts/vault-cms-guide.md",
       "displayName": "Vault CMS Guide",
       "checks": {
@@ -94,7 +439,7 @@
         "keywordDensity": [
           {
             "passed": false,
-            "message": "Keyword density too low: 0.0%",
+            "message": "Keyword density too low: 0.1%",
             "suggestion": "Aim for at least 1% density",
             "severity": "warning"
           }
@@ -256,6 +601,265 @@
       "noticesCount": 8
     },
     {
+      "file": "posts/setup.md",
+      "displayName": "Setup",
+      "checks": {
+        "titleLength": [
+          {
+            "passed": false,
+            "message": "Title too short: 21 characters (Setup + \" - Astro Modular\")",
+            "suggestion": "Aim for 30-60 characters",
+            "severity": "warning"
+          }
+        ],
+        "metaDescription": [
+          {
+            "passed": false,
+            "message": "Description too short: 20 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
+          }
+        ],
+        "titleH1Uniqueness": [
+          {
+            "passed": true,
+            "message": "Meta title and H1 are unique (prefix/suffix configured)",
+            "severity": "info"
+          }
+        ],
+        "keywordInTitle": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
+        "keywordInDescription": [],
+        "keywordInHeadings": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
+        "keywordInSlug": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
+        "slugFormat": [],
+        "keywordDensity": [
+          {
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
+          }
+        ],
+        "headingOrder": [
+          {
+            "passed": true,
+            "message": "Heading structure is correct",
+            "severity": "info"
+          }
+        ],
+        "contentLength": [
+          {
+            "passed": false,
+            "message": "Content too short: 135 words",
+            "suggestion": "Aim for at least 300 words",
+            "severity": "warning"
+          }
+        ],
+        "duplicateTitles": [],
+        "duplicateDescriptions": [],
+        "duplicateContent": [],
+        "altText": [
+          {
+            "passed": true,
+            "message": "No media elements in this post",
+            "severity": "info"
+          }
+        ],
+        "imageFileNames": [
+          {
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
+          }
+        ],
+        "nakedLinks": [
+          {
+            "passed": true,
+            "message": "No naked links found",
+            "severity": "info"
+          }
+        ],
+        "brokenLinks": [
+          {
+            "passed": true,
+            "message": "No broken internal links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenLinks": [
+          {
+            "passed": true,
+            "message": "No potentially broken links found",
+            "severity": "info"
+          }
+        ],
+        "potentiallyBrokenEmbeds": [],
+        "externalBrokenLinks": [
+          {
+            "passed": true,
+            "message": "External link: https://store.google.com/product/google_fitbit_air",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 22,
+              "searchText": "https://store.google.com/product/google_fitbit_air",
+              "context": "\n## Daily Devices\n- [Google FitBit Air](https://store.google.com/product/google_fitbit_air)\n\t- I use this screenless fitness tracker to measure cardiovascular health metrics like HRV, resting heart rate, etc. and to track workouts. It's a great alternative to the [Whoop](https://www.whoop.com/us/en/?srsltid=AfmBOoqhrANPBUmack1_St8WAdQxgBBgOu0K8cC6ijwuNzYbaWwf0Cqs) band which requires a pricy yearly subscription to use.\n- iPhone 16e, 128GB, Black"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.whoop.com/us/en/?srsltid=AfmBOoqhrANPBUmack1_St8WAdQxgBBgOu0K8cC6ijwuNzYbaWwf0Cqs",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 23,
+              "searchText": "https://www.whoop.com/us/en/?srsltid=AfmBOoqhrANPBUmack1_St8WAdQxgBBgOu0K8cC6ijwuNzYbaWwf0Cqs",
+              "context": "## Daily Devices\n- [Google FitBit Air](https://store.google.com/product/google_fitbit_air)\n\t- I use this screenless fitness tracker to measure cardiovascular health metrics like HRV, resting heart rate, etc. and to track workouts. It's a great alternative to the [Whoop](https://www.whoop.com/us/en/?srsltid=AfmBOoqhrANPBUmack1_St8WAdQxgBBgOu0K8cC6ijwuNzYbaWwf0Cqs) band which requires a pricy yearly subscription to use.\n- iPhone 16e, 128GB, Black\n\t- Got a great deal on this through a carrier."
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_X1_Carbon_7th_Gen",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 27,
+              "searchText": "https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_X1_Carbon_7th_Gen",
+              "context": "\t- Got a great deal on this through a carrier.\n- AirPods Pro 3\n- [ThinkPad X1 Carbon (7th Gen)](https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_X1_Carbon_7th_Gen), 14\" 1080p, 16GB RAM, 512GB SSD\n## Desk Setup\n- [Budget Standing Desk](https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 29,
+              "searchText": "https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6",
+              "context": "- [ThinkPad X1 Carbon (7th Gen)](https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_X1_Carbon_7th_Gen), 14\" 1080p, 16GB RAM, 512GB SSD\n## Desk Setup\n- [Budget Standing Desk](https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6)\n- [Refurbished Steelcase Ameap Chair](https://www.btod.com/sc-ameap/) (Steelcase Amia frame + Leap seat)\n- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.btod.com/sc-ameap/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 30,
+              "searchText": "https://www.btod.com/sc-ameap/",
+              "context": "## Desk Setup\n- [Budget Standing Desk](https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6)\n- [Refurbished Steelcase Ameap Chair](https://www.btod.com/sc-ameap/) (Steelcase Amia frame + Leap seat)\n- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz\n\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 31,
+              "searchText": "https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV",
+              "context": "- [Budget Standing Desk](https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6)\n- [Refurbished Steelcase Ameap Chair](https://www.btod.com/sc-ameap/) (Steelcase Amia frame + Leap seat)\n- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz\n\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)\n- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 32,
+              "searchText": "https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1",
+              "context": "- [Refurbished Steelcase Ameap Chair](https://www.btod.com/sc-ameap/) (Steelcase Amia frame + Leap seat)\n- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz\n\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)\n- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)\n- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 33,
+              "searchText": "https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/",
+              "context": "- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz\n\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)\n- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)\n- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)\n- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.wobkey.com/products/rainy75?variant=45523411304683",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 34,
+              "searchText": "https://www.wobkey.com/products/rainy75?variant=45523411304683",
+              "context": "\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)\n- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)\n- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)\n- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)\n- [Steelseries QcK Heavy Mousepad](https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 35,
+              "searchText": "https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1",
+              "context": "- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)\n- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)\n- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)\n- [Steelseries QcK Heavy Mousepad](https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl)\n- [Honeywell Desk Lamp](https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 36,
+              "searchText": "https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl",
+              "context": "- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)\n- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)\n- [Steelseries QcK Heavy Mousepad](https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl)\n- [Honeywell Desk Lamp](https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/)\n- IEMs - Still Deciding"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 37,
+              "searchText": "https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/",
+              "context": "- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)\n- [Steelseries QcK Heavy Mousepad](https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl)\n- [Honeywell Desk Lamp](https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/)\n- IEMs - Still Deciding"
+            }
+          }
+        ],
+        "readingLevel": [
+          {
+            "passed": false,
+            "message": "Reading level too high: 16.3 (Difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
+          }
+        ]
+      },
+      "overallScore": 58,
+      "issuesCount": 0,
+      "warningsCount": 4,
+      "noticesCount": 16
+    },
+    {
       "file": "posts/obsidian-embeds-demo.md",
       "displayName": "Obsidian Embeds Demo",
       "checks": {
@@ -313,7 +917,7 @@
         "keywordDensity": [
           {
             "passed": false,
-            "message": "Keyword density too low: 0.1%",
+            "message": "Keyword density too low: 0.2%",
             "suggestion": "Aim for at least 1% density",
             "severity": "warning"
           }
@@ -344,15 +948,9 @@
         ],
         "imageFileNames": [
           {
-            "passed": false,
-            "message": "Image 2 has random file name: 1933196479801536736",
-            "suggestion": "Use descriptive file names",
-            "severity": "warning",
-            "position": {
-              "line": 53,
-              "searchText": "![Why doesn't everyone use Astro? Writing blog posts in markdown is beautiful.](https://x.com/davidvkimball/status/1933196479801536736)",
-              "context": "### Twitter/X Posts\n\n![Why doesn't everyone use Astro? Writing blog posts in markdown is beautiful.](https://x.com/davidvkimball/status/1933196479801536736)\n\nTwitter posts are embedded with theme-aware styling that matches your site's light/dark mode."
-            }
+            "passed": true,
+            "message": "All images have good file names",
+            "severity": "info"
           }
         ],
         "nakedLinks": [
@@ -411,7 +1009,7 @@
       },
       "overallScore": 83,
       "issuesCount": 0,
-      "warningsCount": 3,
+      "warningsCount": 2,
       "noticesCount": 2
     },
     {
@@ -682,7 +1280,7 @@
             "position": {
               "line": 121,
               "searchText": "https://unsplash.com/@antoinerault?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral",
-              "context": "\n![Mountains](/posts/attachments/mountains.png)\n*Photo by [Antoine Rault](https://unsplash.com/@antoinerault?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral)*\n\n#### Multiple Image Layouts"
+              "context": "\n![Mountains](attachments/mountains.png)\n*Photo by [Antoine Rault](https://unsplash.com/@antoinerault?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral)*\n\n#### Multiple Image Layouts"
             }
           },
           {
@@ -693,7 +1291,7 @@
             "position": {
               "line": 121,
               "searchText": "https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral",
-              "context": "\n![Mountains](/posts/attachments/mountains.png)\n*Photo by [Antoine Rault](https://unsplash.com/@antoinerault?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral)*\n\n#### Multiple Image Layouts"
+              "context": "\n![Mountains](attachments/mountains.png)\n*Photo by [Antoine Rault](https://unsplash.com/@antoinerault?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral) on [Unsplash](https://unsplash.com/?utm_source=Obsidian%20Image%20Inserter%20Plugin&utm_medium=referral)*\n\n#### Multiple Image Layouts"
             }
           },
           {
@@ -704,7 +1302,7 @@
             "position": {
               "line": 159,
               "searchText": "https://obsidian.md",
-              "context": "### Linked Images\n\n[![Mountains](/posts/attachments/mountains.png)](https://obsidian.md)\n\n```"
+              "context": "### Linked Images\n\n[![Mountains](attachments/mountains.png)](https://obsidian.md)\n\n```"
             }
           },
           {
@@ -733,7 +1331,7 @@
         "readingLevel": [
           {
             "passed": true,
-            "message": "Good reading level: 7.0 (Easy to read)",
+            "message": "Good reading level: 6.8 (Easy to read)",
             "severity": "info"
           }
         ]
@@ -744,21 +1342,22 @@
       "noticesCount": 9
     },
     {
-      "file": "posts/sample-folder-based-post/index.md",
-      "displayName": "Sample Folder-Based Post",
+      "file": "posts/hardware-desk-setup.md",
+      "displayName": "Hardware/Desk Setup",
       "checks": {
         "titleLength": [
           {
             "passed": true,
-            "message": "Good title length: 40 characters (Sample Folder-Based Post + \" - Astro Modular\")",
+            "message": "Good title length: 35 characters (Hardware/Desk Setup + \" - Astro Modular\")",
             "severity": "info"
           }
         ],
         "metaDescription": [
           {
-            "passed": true,
-            "message": "Good description length: 148 characters",
-            "severity": "info"
+            "passed": false,
+            "message": "Description too short: 49 characters",
+            "suggestion": "Aim for 120-160 characters",
+            "severity": "warning"
           }
         ],
         "titleH1Uniqueness": [
@@ -770,43 +1369,32 @@
         ],
         "keywordInTitle": [
           {
-            "passed": false,
-            "message": "Keyword not found in title",
-            "suggestion": "Include your target keyword in the title",
-            "severity": "warning"
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
           }
         ],
-        "keywordInDescription": [
-          {
-            "passed": false,
-            "message": "Keyword not found in description",
-            "suggestion": "Include your target keyword in the description",
-            "severity": "warning"
-          }
-        ],
+        "keywordInDescription": [],
         "keywordInHeadings": [
           {
-            "passed": false,
-            "message": "Keyword not found in H1",
-            "suggestion": "Include your target keyword in the H1 heading for better SEO",
-            "severity": "warning"
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
           }
         ],
         "keywordInSlug": [
           {
-            "passed": false,
-            "message": "Target keyword \"\"\"\" not found in slug",
-            "suggestion": "Include your target keyword in the filename",
-            "severity": "warning"
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
           }
         ],
         "slugFormat": [],
         "keywordDensity": [
           {
-            "passed": false,
-            "message": "Keyword density too low: 0.0%",
-            "suggestion": "Aim for at least 1% density",
-            "severity": "warning"
+            "passed": true,
+            "message": "No valid keyword defined in properties",
+            "severity": "notice"
           }
         ],
         "headingOrder": [
@@ -819,7 +1407,7 @@
         "contentLength": [
           {
             "passed": false,
-            "message": "Content too short: 91 words",
+            "message": "Content too short: 135 words",
             "suggestion": "Aim for at least 300 words",
             "severity": "warning"
           }
@@ -830,7 +1418,7 @@
         "altText": [
           {
             "passed": true,
-            "message": "All media elements have alt text",
+            "message": "No media elements in this post",
             "severity": "info"
           }
         ],
@@ -866,24 +1454,152 @@
         "externalBrokenLinks": [
           {
             "passed": true,
-            "message": "No external links found",
-            "severity": "info"
+            "message": "External link: https://store.google.com/product/google_fitbit_air",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 24,
+              "searchText": "https://store.google.com/product/google_fitbit_air",
+              "context": "\n## Daily Devices\n- [Google FitBit Air](https://store.google.com/product/google_fitbit_air)\n\t- I use this screenless fitness tracker to measure cardiovascular health metrics like HRV, resting heart rate, etc. and to track workouts. It's a great alternative to the [Whoop](https://www.whoop.com/us/en/?srsltid=AfmBOoqhrANPBUmack1_St8WAdQxgBBgOu0K8cC6ijwuNzYbaWwf0Cqs) band which requires a pricy yearly subscription to use.\n- iPhone 16e, 128GB, Black"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.whoop.com/us/en/?srsltid=AfmBOoqhrANPBUmack1_St8WAdQxgBBgOu0K8cC6ijwuNzYbaWwf0Cqs",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 25,
+              "searchText": "https://www.whoop.com/us/en/?srsltid=AfmBOoqhrANPBUmack1_St8WAdQxgBBgOu0K8cC6ijwuNzYbaWwf0Cqs",
+              "context": "## Daily Devices\n- [Google FitBit Air](https://store.google.com/product/google_fitbit_air)\n\t- I use this screenless fitness tracker to measure cardiovascular health metrics like HRV, resting heart rate, etc. and to track workouts. It's a great alternative to the [Whoop](https://www.whoop.com/us/en/?srsltid=AfmBOoqhrANPBUmack1_St8WAdQxgBBgOu0K8cC6ijwuNzYbaWwf0Cqs) band which requires a pricy yearly subscription to use.\n- iPhone 16e, 128GB, Black\n\t- Got a great deal on this through a carrier."
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_X1_Carbon_7th_Gen",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 29,
+              "searchText": "https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_X1_Carbon_7th_Gen",
+              "context": "\t- Got a great deal on this through a carrier.\n- AirPods Pro 3\n- [ThinkPad X1 Carbon (7th Gen)](https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_X1_Carbon_7th_Gen), 14\" 1080p, 16GB RAM, 512GB SSD\n## Desk Setup\n- [Budget Standing Desk](https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 31,
+              "searchText": "https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6",
+              "context": "- [ThinkPad X1 Carbon (7th Gen)](https://psref.lenovo.com/l/Product/ThinkPad/ThinkPad_X1_Carbon_7th_Gen), 14\" 1080p, 16GB RAM, 512GB SSD\n## Desk Setup\n- [Budget Standing Desk](https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6)\n- [Refurbished Steelcase Ameap Chair](https://www.btod.com/sc-ameap/) (Steelcase Amia frame + Leap seat)\n- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.btod.com/sc-ameap/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 32,
+              "searchText": "https://www.btod.com/sc-ameap/",
+              "context": "## Desk Setup\n- [Budget Standing Desk](https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6)\n- [Refurbished Steelcase Ameap Chair](https://www.btod.com/sc-ameap/) (Steelcase Amia frame + Leap seat)\n- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz\n\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 33,
+              "searchText": "https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV",
+              "context": "- [Budget Standing Desk](https://www.amazon.com/ErGear-Adjustable-Electric-Standing-Computer/dp/B0B41YH9B6)\n- [Refurbished Steelcase Ameap Chair](https://www.btod.com/sc-ameap/) (Steelcase Amia frame + Leap seat)\n- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz\n\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)\n- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 34,
+              "searchText": "https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1",
+              "context": "- [Refurbished Steelcase Ameap Chair](https://www.btod.com/sc-ameap/) (Steelcase Amia frame + Leap seat)\n- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz\n\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)\n- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)\n- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 35,
+              "searchText": "https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/",
+              "context": "- [Dell Monitor](https://www.bestbuy.com/product/dell-s2725qc-27-ips-led-4k-uhd-120hz-freesync-premium-monitor-usb-c-hdmi-ash-white/J3K4L63JXV), 4K, USB-C, 27\", 120hz\n\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)\n- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)\n- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)\n- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.wobkey.com/products/rainy75?variant=45523411304683",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 36,
+              "searchText": "https://www.wobkey.com/products/rainy75?variant=45523411304683",
+              "context": "\t- [Monitor Arm](https://www.amazon.com/WALI-Adjustable-Computer-Monitors-GSMP001N/dp/B08NSSH7NH?th=1)\n- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)\n- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)\n- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)\n- [Steelseries QcK Heavy Mousepad](https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 37,
+              "searchText": "https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1",
+              "context": "- [Microphone Kit](https://www.amazon.com/FIFINE-Microphone-Podcasting-Voice-Over-AmpliGame-AM8T/dp/B0C74GYW3J/) (includes boom arm)\n- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)\n- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)\n- [Steelseries QcK Heavy Mousepad](https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl)\n- [Honeywell Desk Lamp](https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/)"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 38,
+              "searchText": "https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl",
+              "context": "- [Rainy75 Mechanical Keyboard](https://www.wobkey.com/products/rainy75?variant=45523411304683)\n- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)\n- [Steelseries QcK Heavy Mousepad](https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl)\n- [Honeywell Desk Lamp](https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/)\n- IEMs - Still Deciding"
+            }
+          },
+          {
+            "passed": true,
+            "message": "External link: https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/",
+            "suggestion": "To find if any of these are broken, use the 'Check external links for 404s' button to trigger it.",
+            "severity": "notice",
+            "position": {
+              "line": 39,
+              "searchText": "https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/",
+              "context": "- [ATK VXE R1 Pro Gaming Mouse](https://www.amazon.com/ATK-Dragonfly-R1-Lightweight-Adjustable/dp/B0FN7K3XCR?th=1)\n- [Steelseries QcK Heavy Mousepad](https://steelseries.com/gaming-mousepads/qck-heavy-series?size=xxl)\n- [Honeywell Desk Lamp](https://www.amazon.com/Honeywell-Upgraded-LED-Desk-Lamp/dp/B0D5LW44T8/)\n- IEMs - Still Deciding"
+            }
           }
         ],
         "readingLevel": [
           {
-            "passed": true,
-            "message": "Good reading level: 9.6 (Moderately easy to read)",
-            "severity": "info"
+            "passed": false,
+            "message": "Reading level too high: 16.3 (Difficult to read)",
+            "suggestion": "Consider simplifying sentence structure and using shorter words",
+            "severity": "warning"
           }
         ]
       },
-      "overallScore": 80,
+      "overallScore": 65,
       "issuesCount": 0,
-      "warningsCount": 6,
-      "noticesCount": 0
+      "warningsCount": 3,
+      "noticesCount": 16
     }
   ],
-  "lastScanTimestamp": 1773463954001,
+  "lastScanTimestamp": 1779563604372,
   "showNotices": true
 }

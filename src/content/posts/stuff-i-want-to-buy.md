@@ -1,7 +1,7 @@
 ---
 title: Stuff I Want to Buy
 date: 2026-05-21
-description: Stuff I want to buy.
+description: Stuff I want to buy in the future.
 tags:
   - setup
   - shopping
@@ -10,7 +10,7 @@ imageAlt: ""
 imageOG: false
 hideCoverImage: false
 hideTOC: false
-targetKeyword: ""
+targetKeyword:
 draft: false
 ---
 ## Fragrances
@@ -60,7 +60,7 @@ draft: false
 	- [Pencil Lead](https://www.amazon.com/Pencil-Lead-Smudge-Proof-Leads-0-5mm/dp/B097SV9RD5)
 - [Eraser](https://www.amazon.com/Sakura-50258-Sumogrip-Premium-Eraser/dp/B06XTRSLSN)
 - [Water Bottle](https://www.amazon.com/Owala-FreeSip-Insulated-Stainless-Two-Way/dp/B0FDS4Z6YF)
-- [Desk Lamp](https://www.amazon.com/Honeywell-SunturaluxTM-Charging-Ports-HWT-H01/dp/B0C277LF46) - [Setup](posts/setup.md)
+- [Desk Lamp](https://www.amazon.com/Honeywell-SunturaluxTM-Charging-Ports-HWT-H01/dp/B0C277LF46) - [Setup](hardware-desk-setup.md)
 - Extra-long Twin Sheets
 - Blanket
 - Pillow

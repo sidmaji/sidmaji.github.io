@@ -83,16 +83,16 @@ export default defineConfig({
   redirects: (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'build') ? {
   '/about-me': '/about',
   '/about-us': '/about',
-  '/contact-me': '/contact',
-  '/contact-us': '/contact',
+  '/posts/desk-setup': '/posts/hardware-desk-setup',
+  '/posts/hardware': '/posts/hardware-desk-setup',
+  '/posts/setup': '/posts/hardware-desk-setup',
   '/posts/mermaid-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagram-test': '/posts/obsidian-embeds-demo',
   '/posts/mermaid-diagrams': '/posts/obsidian-embeds-demo',
   '/posts/astro-suite-vault-modular-guide': '/posts/vault-cms-guide',
   '/posts/astro-suite-obsidian-vault-guide-astro-modular': '/posts/vault-cms-guide',
   '/posts/obsidian-vault-guide': '/posts/vault-cms-guide',
-  '/projects/obsidian-astro-suite': '/projects/index',
-  '/projects/vault-cms': '/projects/index'
+  '/projects/obsidian-astro-composer': '/projects/astro-composer'
 } : {},
 image: {
     service: {

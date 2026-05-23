@@ -158,14 +158,20 @@
   force = true
 
 [[redirects]]
-  from = "/contact-me"
-  to = "/contact"
+  from = "/posts/desk-setup"
+  to = "/posts/hardware-desk-setup"
   status = 301
   force = true
 
 [[redirects]]
-  from = "/contact-us"
-  to = "/contact"
+  from = "/posts/hardware"
+  to = "/posts/hardware-desk-setup"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/posts/setup"
+  to = "/posts/hardware-desk-setup"
   status = 301
   force = true
 
@@ -206,14 +212,8 @@
   force = true
 
 [[redirects]]
-  from = "/projects/obsidian-astro-suite"
-  to = "/projects/index"
-  status = 301
-  force = true
-
-[[redirects]]
-  from = "/projects/vault-cms"
-  to = "/projects/index"
+  from = "/projects/obsidian-astro-composer"
+  to = "/projects/astro-composer"
   status = 301
   force = true
 

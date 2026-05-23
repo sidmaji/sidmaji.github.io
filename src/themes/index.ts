@@ -473,8 +473,8 @@ export const themes = {
   },
   obsidian: {
 	primary: {
-	  50: '#f5f4ec',
-	  100: '#e7e6db',
+	  50: '#cecdc3',
+	  100: '#cecdc3',
 	  200: '#cecdc3',
 	  300: '#b2b1a8',
 	  400: '#97968f',
@@ -482,7 +482,7 @@ export const themes = {
 	  600: '#61615c',
 	  700: '#4a4945',
 	  800: '#333330',
-	  900: '#1c1c1a',
+	  900: '#282825',
 	  950: '#11110f',
 	},
     highlight: {
