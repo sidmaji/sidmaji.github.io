@@ -22,4 +22,4 @@ Feel free to [reach out via email](mailto:sidmaji@utexas.edu) or follow me:
 
 ### This website
 
-This website was built with **Astro Modular**, an Astro blog theme template designed for Obsidian users. This theme allows me to use Obsidian as a CMS for instant blog publishing--[check it out](https://github.com/davidvkimball/astro-modular)!
+This website was built with **Astro Modular**, an Astro blog theme template designed for Obsidian users. This theme allows me to use Obsidian as a CMS for instant blog publishing: [check it out](https://github.com/davidvkimball/astro-modular)!
