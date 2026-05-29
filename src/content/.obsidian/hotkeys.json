@@ -227,15 +227,6 @@
       "key": "E"
     }
   ],
-  "webviewer:open": [
-    {
-      "modifiers": [
-        "Mod",
-        "Shift"
-      ],
-      "key": "V"
-    }
-  ],
   "image-manager:search-image": [
     {
       "modifiers": [

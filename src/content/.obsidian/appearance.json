@@ -6,7 +6,7 @@
     "astro-modular-styling"
   ],
   "theme": "system",
-  "accentColor": "#9779e2",
+  "accentColor": "",
   "baseFontSize": 20,
   "interfaceFontFamily": "Inter",
   "textFontFamily": ""
