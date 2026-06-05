@@ -1,0 +1,17 @@
+views:
+  - type: cards
+    name: Table
+    filters:
+      and:
+        - file.folder == "media/anime"
+        - file.ext == "md"
+        - file.name != "index"
+    order:
+      - englishTitle
+      - onlineRating
+    sort:
+      - property: onlineRating
+        direction: DESC
+    imageFit: contain
+    image: note.image
+    imageAspectRatio: 1.4

@@ -1,0 +1,15 @@
+views:
+  - type: cards
+    name: Table
+    filters:
+      and:
+        - file.inFolder("media/games")
+        - file.ext == "md"
+        - file.name != "index"
+    sort:
+      - property: onlineRating
+        direction: DESC
+    cardSize: 220
+    imageAspectRatio: 1.4
+    imageFit: contain
+    image: note.image

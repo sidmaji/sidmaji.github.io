@@ -8,7 +8,6 @@ tags:
 aliases:
   - desk-setup
 ---
-
 ## Daily Devices
 - [Google FitBit Air](https://store.google.com/product/google_fitbit_air)
 	- I use this screenless fitness tracker to measure cardiovascular health metrics like HRV, resting heart rate, etc. and to track workouts. It's a great alternative to the [Whoop](https://www.whoop.com/us/en/?srsltid=AfmBOoqhrANPBUmack1_St8WAdQxgBBgOu0K8cC6ijwuNzYbaWwf0Cqs) band which requires a pricy yearly subscription to use.

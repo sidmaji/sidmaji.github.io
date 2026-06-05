@@ -1,0 +1,36 @@
+---
+
+type: movie
+subType: movie
+title: Koe no Katachi
+englishTitle: A Silent Voice
+year: 2016
+dataSource: MALAPI
+url: https://myanimelist.net/anime/28851/Koe_no_Katachi
+id: 28851
+plot: |-
+  As a wild youth, elementary school student Shouya Ishida sought to beat boredom in the cruelest ways. When the deaf Shouko Nishimiya transfers into his class, Shouya and the rest of his class thoughtlessly bully her for fun. However, when her mother notifies the school, he is singled out and blamed for everything done to her. With Shouko transferring out of the school, Shouya is left at the mercy of his classmates. He is heartlessly ostracized all throughout elementary and middle school, while teachers turn a blind eye.
+
+  Now in his third year of high school, Shouya is still plagued by his wrongdoings as a young boy. Sincerely regretting his past actions, he sets out on a journey of redemption: to meet Shouko once more and make amends.
+
+  Koe no Katachi tells the heartwarming tale of Shouya's reunion with Shouko and his honest attempts to redeem himself, all while being continually haunted by the shadows of his past.
+   
+  [Written by MAL Rewrite]
+genres:
+  - Award Winning
+  - Drama
+director: []
+writer: []
+studio: Kyoto Animation
+duration: 2 hr 10 min
+onlineRating: 8.93
+actors: []
+image: https://myanimelist.net/images/anime/1122/96435.jpg
+released: true
+streamingServices:
+  - Netflix
+premiere: 09/16/2016
+watched: false
+lastWatched: ""
+personalRating: 0
+---
