@@ -212,10 +212,15 @@ plugins:
       priority: 5
       condition: not-index
   - source: github:quartz-community/comments
-    enabled: false
+    enabled: true
     options:
       provider: giscus
-      options: {}
+      options:
+        repo: sidmaji/sidmaji.github.io
+        repoId: R_kgDOSxk45Q
+        category: Announcements
+        categoryId: DIC_kwDOSxk45c4C-iou
+        lang: en
     layout:
       position: afterBody
       priority: 10
@@ -223,8 +228,9 @@ plugins:
     enabled: true
     options:
       links:
-        GitHub: https://github.com/jackyzha0/quartz
-        Discord Community: https://discord.gg/cRFFHYye7t
+        GitHub: https://github.com/sidmaji
+	LinkedIn: https://linkedin.com/in/siddhant-maji
+	Instagram: https://instagram.com/sidmaji0
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
