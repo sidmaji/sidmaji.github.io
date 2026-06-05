@@ -16,7 +16,7 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Schibsted Grotesk
+      header: Manrope
       body: Manrope
       code: Fira Mono
     colors:
@@ -229,8 +229,7 @@ plugins:
     options:
       links:
         GitHub: https://github.com/sidmaji
-	LinkedIn: https://linkedin.com/in/siddhant-maji
-	Instagram: https://instagram.com/sidmaji0
+        LinkedIn: https://linkedin.com/in/siddhant-maji
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
