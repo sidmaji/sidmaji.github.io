@@ -2,9 +2,9 @@
 title: About Me
 ---
 Hey, I’m **Siddhant Maji** (or Sid for short)! I'm currently an incoming freshman at [UT Austin](https://www.cs.utexas.edu/) majoring in Computer Science. Here are a few links to explore:
-- [[Notes]]
-- [[Posts]]
-- [[Projects]]
+- [[notes]]
+- [[posts]]
+- [[projects]]
 ## Elsewhere
 Feel free to [reach out via email](mailto:sidmaji@utexas.edu) or follow me:
 - GitHub: [@sidmaji](https://github.com/sidmaji)

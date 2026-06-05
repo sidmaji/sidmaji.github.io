@@ -16,8 +16,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Crimson Pro
-      body: Manrope
+      header: Manrope
+      body: Inter
       code: Fira Code
     colors:
       lightMode:
