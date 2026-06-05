@@ -16,7 +16,7 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: Castoro
+      header: Crimson Pro
       body: Manrope
       code: Fira Code
     colors:
