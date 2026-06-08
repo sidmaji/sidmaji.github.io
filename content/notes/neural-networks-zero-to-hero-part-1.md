@@ -14,12 +14,16 @@ draft: false
 ---
 ![](https://www.youtube.com/watch?v=VMj-3S1tku0&list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&index=1)
 
-This post contains my notes on the first video in [Andrej Karpathy](https://karpathy.ai/)'s YouTube course: Neural Networks: Zero to Hero. It's a very thorough, intuitive introduction to **neural networks** and **backpropagation**, that requires some knowledge of <u>Python</u> and <u>calculus</u> (eg. chain rule, partial differentiation).
+This post contains my notes on the first video in [Andrej Karpathy](https://karpathy.ai/)'s course: [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html).
 
-I used Google Colab to setup the Python notebook; all source code can be found at this GitHub repo: **link here**.
+>A course by Andrej Karpathy on building neural networks, from scratch, in code.
+>We start with the basics of backpropagation and build up to modern deep neural networks, like GPT. In my opinion language models are an excellent place to learn deep learning, even if your intention is to eventually go to other areas like computer vision because most of what you learn will be immediately transferable. This is why we dive into and focus on language models.
+>
+>Prerequisites: solid programming (Python), intro-level math (e.g. derivative, gaussian).
+
+I used Google Colab to setup the Python notebook; all source code can be found at [this GitHub repo](https://github.com/sidmaji/nn-karpathy).
 
 ## Micrograd
-
 The video essential involves building [micrograd](https://github.com/karpathy/micrograd) from scratch, which is a tiny, efficient **Autograd** engine developed by Karpathy that uses very simple scalar values to implement backpropagation and a small neural networks library (with a PyTorch-like API). As the video progresses, we will be able to understand micrograd more and more.
 
 This is a code snippet from micrograd's GitHub readme:
