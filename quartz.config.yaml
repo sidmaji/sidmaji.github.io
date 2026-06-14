@@ -18,26 +18,26 @@ configuration:
     typography:
       header: Aleo
       body: Inter
-      code: Fira Code
+      code: Lilex
     colors:
       lightMode:
-        light: "#faf8f8"
-        lightgray: "#e5e5e5"
-        gray: "#b8b8b8"
-        darkgray: "#4e4e4e"
+        light: "#f7f6f3"
+        lightgray: "#e8e6e1"
+        gray: "#b8b6b0"
+        darkgray: "#4a4a48"
         dark: "#2b2b2b"
-        secondary: "#3B2863"
-        tertiary: "#84a59d"
+        secondary: "#8667c7"
+        tertiary: "#a3c3e6"
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#fff23688"
       darkMode:
-        light: "#161618"
-        lightgray: "#393639"
+        light: "#121212"
+        lightgray: "#2b2b2b"
         gray: "#646464"
         darkgray: "#d4d4d4"
         dark: "#ebebec"
-        secondary: "#8A7BAA"
-        tertiary: "#84a59d"
+        secondary: "#9476d6"
+        tertiary: "#d8c7ff"
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#b3aa0288"
 plugins:
@@ -152,6 +152,8 @@ plugins:
     enabled: true
   - source: github:quartz-community/explorer
     enabled: true
+    options:
+      title: Content
     layout:
       position: left
       priority: 50

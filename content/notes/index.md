@@ -1,3 +1,3 @@
 ---
-title: notes
+title: Notes
 ---
