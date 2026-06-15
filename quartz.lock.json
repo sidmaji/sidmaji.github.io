@@ -193,6 +193,12 @@
       "commit": "a1c1fe0a9c6a5ce1acf6efa01d473a7d9850e2a3",
       "installedAt": "2026-06-05T02:24:29.116Z"
     },
+    "quartz-image-zoom": {
+      "source": "github:DreamCutter28/quartz-image-zoom",
+      "resolved": "https://github.com/DreamCutter28/quartz-image-zoom.git",
+      "commit": "789ae2093ef1cfa304954966708c614e653a7910",
+      "installedAt": "2026-06-15T04:10:00.306Z"
+    },
     "quartz-themes": {
       "source": {
         "name": "quartz-themes",

@@ -54,7 +54,7 @@ plugins:
     enabled: true
     options:
       theme:
-        light: one-light
+        light: catppuccin-latte
         dark: one-dark-pro
       keepBackground: false
     order: 20
@@ -277,6 +277,10 @@ plugins:
       darkMode: auto
       exportPadding: 20
     order: 50
+  - source: github:DreamCutter28/quartz-image-zoom
+    enabled: true
+    options: {}
+    order: 35
 layout:
   groups:
     toolbar:

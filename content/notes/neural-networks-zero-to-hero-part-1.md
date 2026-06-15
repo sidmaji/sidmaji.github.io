@@ -52,7 +52,7 @@ Essentially, some scalar values are being initialized (`a` and `b`), and they ar
 
 This can be seen when `a.grad` is printed, which tells us how the function of `g` responds when `a` is increased by an infinitesimally small amount, which is basically the instantaneous slope or derivative $\frac{dg}{da}$, as it is known in the field of calculus.
 
-### Chain Rule
+> [!note] Chain Rule
 $$\frac{dy}{dx} = \frac{dy}{du} \cdot \frac{du}{dx}$$
 For example, if $y = 3(2x + 2)^2$, $\frac{dy}{dx} = 6u \cdot 2$, where $u = 2x + 2$. Chain rule involves taking the derivative of the outside, then multiplying by the derivative of the inside..
 
@@ -91,11 +91,15 @@ This outputs the numpy array `xs`: ```[-5.00, -4.75, -4.50, -4.25, -4.00, -3.75,
   1.75,  2.00,  2.25,  2.50,  2.75,  3.00,  3.25,  3.50,  3.75,
   4.00,  4.25,  4.50,  4.75]```
 These values represent the y-values where $y=f(x)$. We can use matplotlib.pyplot to plot these values on a graph, `plt.plot(xs, ys)`:
+![](plot1.png)
 
 As expected, it is a parabola.
 
-Now, if we derive the function $f(x) = 3x^2 - 4x + 5$ by hand, we can use power rule to get $f'(x) = 6x - 4$. **Power rule**:
-$$\frac{d}{dx}(x^{n})=nx^{n-1}$$
+Now, if we derive the function $f(x) = 3x^2 - 4x + 5$ by hand, we can use **power rule** to get $f'(x) = 6x - 4$.
+
+> [!note] **Power Rule**
+> $$\frac{d}{dx}(x^{n})=nx^{n-1}$$
+
 Plotting the derivative $f'(x) = 6x - 4$ gives us a straight line:
 
 ```python
@@ -104,7 +108,7 @@ plt.plot(xs, 6 * xs - 4)
 ```
 
 This makes sense because the derivative of a quadratic function is linear. The graph represents the instantaneous slope of the parabola $f(x)$ at every value of $x$.
-- When the derivative is positive, the function is inreasing.
+- When the derivative is positive, the function is increasing.
 - When the derivative is negative, the function is decreasing.
 - When the derivative is 0, the function is not changing at that point, meaning it is possibly a local max or min.
 	- For example, in this case, the slope/derivative of $f(x)$ is 0 when $x = \frac{2}{3}$. This is where the parabola has its minimum value.
