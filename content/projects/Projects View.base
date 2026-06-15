@@ -1,3 +1,8 @@
+formulas:
+  Untitled: description.slice(0, 200) + "..."
+properties:
+  formula.Untitled:
+    displayName: Description
 views:
   - type: cards
     name: Table
@@ -9,10 +14,11 @@ views:
     order:
       - file.name
       - tags
+      - formula.Untitled
     sort:
       - property: date
         direction: DESC
-    cardSize: 220
-    imageAspectRatio: 1.45
+    cardSize: 320
+    imageAspectRatio: 1.65
     image: note.image
     imageFit: contain

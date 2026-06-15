@@ -1,6 +1,5 @@
 ---
 title: Hardware/Desk Setup
-description: My hardware and desk setup (devices I use daily).
 tags:
   - tools
   - hardware

@@ -1,6 +1,5 @@
 ---
 title: "Neural Networks: Zero to Hero (Part 1)"
-description: "My notes on the first video in Andrej Karpathy's YouTube course: \"Neural Networks: Zero to Hero\""
 date: 2026-05-28
 tags:
   - machine-learning
@@ -16,10 +15,12 @@ draft: false
 
 This post contains my notes on the first video in [Andrej Karpathy](https://karpathy.ai/)'s course: [Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html).
 
->A course by Andrej Karpathy on building neural networks, from scratch, in code.
+>[!cite] This Course
+>**A course by Andrej Karpathy on building neural networks, from scratch, in code.**
+>
 >We start with the basics of backpropagation and build up to modern deep neural networks, like GPT. In my opinion language models are an excellent place to learn deep learning, even if your intention is to eventually go to other areas like computer vision because most of what you learn will be immediately transferable. This is why we dive into and focus on language models.
 >
->Prerequisites: solid programming (Python), intro-level math (e.g. derivative, gaussian).
+>**Prerequisites**: solid programming (Python), intro-level math (e.g. derivative, gaussian).
 
 I used Google Colab to setup the Python notebook; all source code can be found at [this GitHub repo](https://github.com/sidmaji/nn-karpathy).
 

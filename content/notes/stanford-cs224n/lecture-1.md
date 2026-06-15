@@ -1,6 +1,5 @@
 ---
 title: Lecture 1
-description: My notes on the first lecture in Stanford's CS224N course.
 date: 2026-06-13
 tags:
   - artificial-intelligence

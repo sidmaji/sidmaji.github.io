@@ -1,0 +1,44 @@
+properties:
+  file.name:
+    displayName: Code
+  note.tags:
+    displayName: Field
+  note.course-name:
+    displayName: Course-Name
+  note.recommend:
+    displayName: Recommend
+  note.credits:
+    displayName: Credits
+  note.grade:
+    displayName: Grade
+  file.tags:
+    displayName: Field
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("courses")
+        - file.basename != "index"
+        - file.folder != "courses"
+    groupBy:
+      property: file.folder
+      direction: DESC
+    order:
+      - file.name
+      - course-name
+      - recommend
+      - file.tags
+      - grade
+      - credits
+    sort:
+      - property: file.name
+        direction: ASC
+      - property: credits
+        direction: ASC
+    indentProperties: true
+    rowHeight: medium
+    columnSize:
+      file.name: 97
+      note.course-name: 348
+      note.credits: 113
