@@ -1,0 +1,18 @@
+views:
+  - type: cards
+    name: Table
+    filters:
+      and:
+        - file.inFolder("projects")
+        - file.ext == "md"
+        - file.name != "index"
+    order:
+      - file.name
+      - tags
+    sort:
+      - property: date
+        direction: DESC
+    cardSize: 220
+    imageAspectRatio: 1.45
+    image: note.image
+    imageFit: contain
