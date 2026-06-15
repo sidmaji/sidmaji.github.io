@@ -1,5 +1,5 @@
 formulas:
-  Untitled: description.slice(0, 200) + "..."
+  Untitled: description.slice(0, 150) + "..."
 properties:
   formula.Untitled:
     displayName: Description
