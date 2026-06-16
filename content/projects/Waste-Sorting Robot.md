@@ -15,6 +15,8 @@ cssclasses:
 ---
 > [!info] Links
 > **GitHub**: https://github.com/sidmaji/Garbage-Image-Classification
-**Slides**: [[Waste Sorting.pdf]]
 
 Earned **3rd place** out of 60 competitors during my research internship at UT Dallas.
+
+## Slides
+![[Waste Sorting.pdf]]

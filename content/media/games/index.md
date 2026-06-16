@@ -1,4 +1,4 @@
 ---
-title: games
+title: Games
 ---
 ![[Games View.base]]

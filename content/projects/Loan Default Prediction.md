@@ -15,6 +15,6 @@ cssclasses:
 > [!info] Links
 > **GitHub**: https://github.com/sidmaji/Loan-Default-Prediction
 **Demo**: https://sidmaji-loan-default-predictor.hf.space/
-**Paper**: [[Loan Default Prediction Paper - Siddhant Maji.pdf]]
 
-Earned **3rd place** out of 60 competitors during my research internship at UT Dallas.
+## Paper
+![[Loan Default Prediction Paper - Siddhant Maji.pdf]]

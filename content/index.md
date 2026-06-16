@@ -18,7 +18,7 @@ I'm currently an **incoming freshman** at [UT Austin](https://www.cs.utexas.edu/
 	- [[Financial Sentiment Analysis using LLMs]] - Won 2nd place out of 60 participants
 	- [[Waste-Sorting Robot]] -  Won 3rd place
 - **Credit Risk Analyst Intern @ CashPey**
-	- [Loan Default Prediction with ML](https://github.com/sidmaji/Loan-Default-Prediction)
+	- [[Loan Default Prediction]]
 - **Co-Founder & Co-President @ Financial Freedom Club**
 	- Raised over $1,500 for local financial education initiatives
 	- Over 200 members across 7 high school chapters
@@ -27,6 +27,7 @@ I'm currently an **incoming freshman** at [UT Austin](https://www.cs.utexas.edu/
 ### Skills
 Python · Java · C++ · PyTorch · AWS/Azure · Linux · Pandas/numPy
 **Currently learning**: MCP/Agents · Rust · Neuroevolution/Evolutionary Computation
+
 ![](https://github-readme-stats-pi-teal-72.vercel.app/api?username=sidmaji&theme=material-palenight&show_icons=true&count_private=true&hide_title=false&hide_border=true&show=prs_merged,prs_merged_percentage&include_all_commits=true&hide=issues,contribs)
 
 
@@ -34,8 +35,33 @@ Python · Java · C++ · PyTorch · AWS/Azure · Linux · Pandas/numPy
 My research focuses on applying AI/ML to real-world use cases. Specifically, I am interested in #nlp, #computer-vision, and #explainability.
 ![[Projects View.base]]
 
-## [[courses/|Courses @ UT Austin]]
+## [[courses/|Courses]]
+
+### UT Austin
 ![[Courses.base]]
+
+### High School
+#### AP Courses
+| Exam                                 | Score |
+| ------------------------------------ | ----- |
+| Human Geography                      | 5     |
+| World History: Modern                | 4     |
+| Statistics                           | 5     |
+| Psychology                           | 5     |
+| Physics 1                            | 5     |
+| Computer Science Principles          | 5     |
+| Computer Science A                   | 5     |
+| United States History                | 5     |
+| Physics C: Mechanics                 | 5     |
+| Physics C: Electricity and Magnetism | 3     |
+| English Language and Composition     | 5     |
+| Calculus AB                          | 5     |
+| Biology                              | 4     |
+| Macroeconomics                       | 5     |
+| Microeconomics                       | 4     |
+| United States Government             | 5     |
+| Calculus BC                          | 5     |
+| English Literature                   | 4     |
 
 ## Elsewhere
 Feel free to [reach out via email](mailto:sidmaji@utexas.edu) or follow me:

@@ -14,7 +14,11 @@ description: This project evaluates multiple approaches to sentiment classificat
 > [!info] Links
 > **GitHub**: https://github.com/sidmaji/financial-sentiment-analysis
 **Demo**: https://finsa-utd.web.app/
-**Paper**: [[Financial Sentiment Analysis using Large Language Models Paper - Siddhant Maji.pdf]]
-**Slides**: [[Financial Sentiment Analysis using Large Language Models.pdf]]
 
 Earned **2nd place** out of 60 competitors during my research internship at UT Dallas.
+
+## Paper
+![[Financial Sentiment Analysis using Large Language Models Paper - Siddhant Maji.pdf]]
+
+## Slides
+![[Financial Sentiment Analysis using Large Language Models.pdf]]
