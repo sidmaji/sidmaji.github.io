@@ -1,4 +1,4 @@
 ---
-title: books
+title: Books
 ---
 ![[Book View.base]]

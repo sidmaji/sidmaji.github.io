@@ -1,4 +1,4 @@
 ---
-title: movies & tv
+title: Movies & TV
 ---
 ![[Movies & TV View.base]]

@@ -5,7 +5,8 @@ configuration:
   enableSPA: true
   enablePopovers: true
   analytics:
-    provider: plausible
+    provider: goatcounter
+    websiteId: sidmaji
   locale: en-US
   baseUrl: sidmaji.github.io
   ignorePatterns:
@@ -227,12 +228,12 @@ plugins:
       position: afterBody
       priority: 10
   - source: github:quartz-community/footer
-    enabled: true
+    enabled: false
     options:
       links:
         GitHub: https://github.com/sidmaji
         LinkedIn: https://linkedin.com/in/siddhant-maji
-        Email: https://mailto:sidmaji@utexas.edu
+        Email: https://mailto:sidmaji.utexas.edu
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer

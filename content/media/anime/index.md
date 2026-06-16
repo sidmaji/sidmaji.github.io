@@ -1,4 +1,4 @@
 ---
-title: anime
+title: Anime
 ---
 ![[Anime View.base]]
