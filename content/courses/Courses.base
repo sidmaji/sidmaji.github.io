@@ -13,6 +13,8 @@ properties:
     displayName: Grade
   file.tags:
     displayName: Field
+  note.professor:
+    displayName: Professor
 views:
   - type: table
     name: Table
@@ -27,6 +29,7 @@ views:
     order:
       - file.name
       - course-name
+      - professor
       - recommend
       - file.tags
       - grade

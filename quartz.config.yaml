@@ -254,6 +254,7 @@ plugins:
       includeAll: false
       includedProperties:
         - course-name
+        - professor
         - recommend
         - grade
         - credits

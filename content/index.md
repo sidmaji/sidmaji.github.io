@@ -11,12 +11,8 @@ I'm currently an **incoming freshman** at [UT Austin](https://www.cs.utexas.edu/
 - [[media/|Media]]
 - [[index.xml|RSS Feed]]
 
-> [!info] Important Documents
->> [!abstract]- CV
->> ![[cv.pdf]]
->
->> [!abstract]- Transcript
->> 
+> [!info]- Important Documents
+>[[cv.pdf|CV]]
 
 ![](https://github-readme-stats-pi-teal-72.vercel.app/api?username=sidmaji&theme=material-palenight&show_icons=true&count_private=true&hide_title=false&hide_border=true&show=prs_merged,prs_merged_percentage&include_all_commits=true&hide=issues,contribs)
 
