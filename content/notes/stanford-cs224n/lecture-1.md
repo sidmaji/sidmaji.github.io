@@ -26,4 +26,29 @@ Language is the primary factor that distinguishes intelligent species like human
 
 The social context of language is important--early NLP models often only capture the denotation (or dictionary definition) of words, but not their contextual meaning and relations. Nowadays, people come up with new meanings for words and their relations every day.
 
-## Evolution of NLP & DL
+## Word Vectors
+
+Word vectors (also known as word embeddings or neural word representations) are a way to represent words as vectors in a high-dimensional space.
+
+> [!cite] J. R. Firth
+> You shall know a word by the company it keeps.
+
+$$banking =
+\begin{pmatrix}
+0.286 \\
+0.792 \\
+-0.177 \\
+...
+\end{pmatrix}
+$$
+$$ monetary =
+\begin{pmatrix}
+0.413 \\
+0.582 \\
+-0.007 \\
+...
+\end{pmatrix}
+$$
+The similarity between these two words is measured by the cosine similarity between their vectors.
+
+"**embedding**": we can think of these words as being embedded in a high-dimensional space.

@@ -41,3 +41,30 @@ Three types:
 - **Mechanics**: how things actually work (eg. what a Transformer is)
 - **Mindset**: understanding scaling and squeezing the most out of your hardware
 - **Intuitions**: build instincts on data and modeling decisions that will maximize accuracy
+
+## Basics
+The goal for the first two weeks of the course is to understand the **basics**.
+- Goal: be able to train a basic LM.
+- Components:
+	- tokenization
+	- model architecture
+	- training
+
+### Tokenization
+**Tokens** are the building blocks of LMs.
+
+Formally, a tokenizer converts raw input text (bytes) into sequences of tokens (integers).
+![[tokenized-example.png]]
+
+Popular tokenizer: BPE (**Byte-Pair Encoding**)
+- This breaks up input into frequently-occurring pairs of bytes (chunks).
+
+Tokenization is efficient:
+- It reduces context length (eg. 1000 bytes -> ~250 tokens).
+- Allows for adaptive computation (eg. more common, frequent bytes can be compressed into fewer tokens like the word "and" or "the", while more interesting, less common bytes can be expanded into more tokens).
+
+The dream is to have tokenizer-free models.
+> [!cite] **Tokenizer-Free Models**
+> The dream of **tokenizer-free** (or token-free) models is ==to eliminate the rigid "middleman" that translates human text into numeric IDs==. Instead of chopping words into predefined pieces, a tokenizer-free system processes language at the raw character or byte level, making AI more robust, universal, and intuitive. [[1](https://www.emergentmind.com/topics/token-free-nlp), [2](https://www.linkedin.com/posts/leadgenmanthan_how-do-large-language-models-work-the-diagram-activity-7325077101441609728-nwNx)]
+
+### Model Architecture
