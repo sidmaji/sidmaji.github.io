@@ -8,7 +8,6 @@ I'm currently an **incoming freshman** at [UT Austin](https://www.cs.utexas.edu/
 - [[notes/|Notes]]
 - [[courses/|Courses]]
 - [[posts/|Posts]]
-- [[media/|Media]]
 - [[index.xml|RSS Feed]]
 
 > [!info]- Important Documents
