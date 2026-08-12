@@ -8,7 +8,7 @@ configuration:
     provider: goatcounter
     websiteId: sidmaji
   locale: en-US
-  baseUrl: sidmaji.github.io
+  baseUrl: sidmaji.com
   ignorePatterns:
     - private
     - templates
